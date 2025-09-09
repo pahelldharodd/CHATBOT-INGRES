@@ -1,0 +1,2723 @@
+{
+  "hierarchical_chunks": [
+    {
+      "chunk_id": "STATE_WEST BENGAL_c2117231",
+      "content": "STATE GROUNDWATER ASSESSMENT: WEST BENGAL\n\nOVERVIEW:\n- Total Assessment Units: 20\n- Total Geographical Area: 1,648,069 hectares\n\nGROUNDWATER RESOURCES:\n- Total Annual Recharge: 35,857 ham\n- Total Extraction: 1,245,800 ham\n- Average Sustainability Ratio: 0.12\n\nRESOURCE CLASSIFICATION:\n- Over-Exploited: 19 units (95.0%)\n- Safe: 1 units (5.0%)\n\nFUTURE AVAILABILITY:\n- Net Annual Availability for Future Use: 1,379,555 ham\n- Domestic Allocation: 204,019 ham",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "ALL",
+          "assessment_unit": "STATE_SUMMARY",
+          "total_units": 20,
+          "geographical_area_ha": 1648069.4699
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 19,
+            "Safe": 1
+          },
+          "avg_extraction_stage": 62290.00194999999,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "STATE",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "STATE_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 455,
+      "data_points": 20
+    },
+    {
+      "chunk_id": "STATE_nan_a3d2de76",
+      "content": "STATE GROUNDWATER ASSESSMENT: nan\n\nOVERVIEW:\n- Total Assessment Units: 1\n- Total Geographical Area: 1,648,069 hectares\n\nGROUNDWATER RESOURCES:\n- Total Annual Recharge: 1,729 ham\n- Total Extraction: 1,245,800 ham\n- Average Sustainability Ratio: 0.00\n\nRESOURCE CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)\n\nFUTURE AVAILABILITY:\n- Net Annual Availability for Future Use: 1,379,555 ham\n- Domestic Allocation: 204,019 ham",
+      "metadata": {
+        "administrative": {
+          "state": "nan",
+          "district": "ALL",
+          "assessment_unit": "STATE_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 1648069.4699
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 1245800.039,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "STATE",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "STATE_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 422,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_ALIPURDUAR_bddbd1ec",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: ALIPURDUAR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 3,665 ham\n- Current Extraction: 7,636 ham\n- Average Sustainability Ratio: 0.48\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "ALIPURDUAR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 7636.472,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 301,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_BANKURA_154b02e1",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: BANKURA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,373 ham\n- Current Extraction: 58,285 ham\n- Average Sustainability Ratio: 0.02\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BANKURA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 58284.61,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 299,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_BARDDHAMAN_003a3aad",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: BARDDHAMAN, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,332 ham\n- Current Extraction: 111,742 ham\n- Average Sustainability Ratio: 0.01\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BARDDHAMAN",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 111741.86100000003,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 303,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_BIRBHUM_fc409f01",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: BIRBHUM, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,377 ham\n- Current Extraction: 44,110 ham\n- Average Sustainability Ratio: 0.03\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BIRBHUM",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 44109.77700000001,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 299,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_DAKSHIN DINAJPUR_8d9809bf",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: DAKSHIN DINAJPUR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,609 ham\n- Current Extraction: 54,447 ham\n- Average Sustainability Ratio: 0.03\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "DAKSHIN DINAJPUR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 54447.015,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 308,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_DARJILING_5696d516",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: DARJILING, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 272,417 hectares\n\nWATER BALANCE:\n- Annual Recharge: 2,983 ham\n- Current Extraction: 3,281 ham\n- Average Sustainability Ratio: 0.91\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "DARJILING",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 272416.9747
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 3280.602,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 306,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_HAORA_3ce4c42b",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: HAORA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 70,308 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,571 ham\n- Current Extraction: 16,597 ham\n- Average Sustainability Ratio: 0.09\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "HAORA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 70308.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 16596.610000000004,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 302,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_HUGLI_b0dfc051",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: HUGLI, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,445 ham\n- Current Extraction: 66,921 ham\n- Average Sustainability Ratio: 0.02\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "HUGLI",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 66920.912,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 297,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_JALPAIGURI_81e23a81",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: JALPAIGURI, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 3,665 ham\n- Current Extraction: 9,313 ham\n- Average Sustainability Ratio: 0.39\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "JALPAIGURI",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 9312.705,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 301,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_KOCH BIHAR_1984fe5f",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: KOCH BIHAR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 3,414 ham\n- Current Extraction: 48,615 ham\n- Average Sustainability Ratio: 0.07\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "KOCH BIHAR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 48614.746,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 302,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_KOLKATA_5fc26279",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: KOLKATA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 87,901 hectares\n\nWATER BALANCE:\n- Annual Recharge: 0 ham\n- Current Extraction: 0 ham\n- Average Sustainability Ratio: 0.00\n\nUNIT CLASSIFICATION:\n- Safe: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "KOLKATA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 87901.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Safe": 1
+          },
+          "avg_extraction_stage": 0.0,
+          "dominant_stress_level": "Safe"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 285,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_MALDA_d97a57d3",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: MALDA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,463 ham\n- Current Extraction: 68,241 ham\n- Average Sustainability Ratio: 0.02\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "MALDA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 68240.64499999999,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 297,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_MURSHIDABAD_69c5ef48",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: MURSHIDABAD, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,379 ham\n- Current Extraction: 202,397 ham\n- Average Sustainability Ratio: 0.01\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "MURSHIDABAD",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 202396.784,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 304,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_NADIA_efc533f8",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: NADIA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,316 ham\n- Current Extraction: 190,818 ham\n- Average Sustainability Ratio: 0.01\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "NADIA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 190818.275,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 298,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_NORTH 24 PARGANAS_97aeba5c",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: NORTH 24 PARGANAS, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,111 ham\n- Current Extraction: 107,174 ham\n- Average Sustainability Ratio: 0.01\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "NORTH 24 PARGANAS",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 107173.981,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 310,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_PASCHIM MEDINIPUR_894c7734",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: PASCHIM MEDINIPUR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,542 ham\n- Current Extraction: 124,369 ham\n- Average Sustainability Ratio: 0.01\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PASCHIM MEDINIPUR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 124369.40799999998,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 310,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_PURBA MEDINIPUR_583537ff",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: PURBA MEDINIPUR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 228,991 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,618 ham\n- Current Extraction: 33,002 ham\n- Average Sustainability Ratio: 0.05\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PURBA MEDINIPUR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 228991.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 33002.234,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 313,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_PURULIYA_cfdcea6f",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: PURULIYA, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,361 ham\n- Current Extraction: 8,843 ham\n- Average Sustainability Ratio: 0.15\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PURULIYA",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 8842.926,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 299,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_SOUTH 24 PARGANAS_ac5ab31b",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: SOUTH 24 PARGANAS, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 988,452 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,595 ham\n- Current Extraction: 11,648 ham\n- Average Sustainability Ratio: 0.14\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "SOUTH 24 PARGANAS",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 988452.4952
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 11648.034,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 315,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_WEST BENGAL_UTTAR DINAJPUR_0237b91b",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: UTTAR DINAJPUR, WEST BENGAL\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 0 hectares\n\nWATER BALANCE:\n- Annual Recharge: 2,037 ham\n- Current Extraction: 78,362 ham\n- Average Sustainability Ratio: 0.03\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "UTTAR DINAJPUR",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 78362.44200000001,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 306,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "DISTRICT_nan_nan_32077e33",
+      "content": "DISTRICT GROUNDWATER ASSESSMENT: nan, nan\n\nDISTRICT OVERVIEW:\n- Assessment Units: 1\n- Geographical Area: 1,648,069 hectares\n\nWATER BALANCE:\n- Annual Recharge: 1,729 ham\n- Current Extraction: 1,245,800 ham\n- Average Sustainability Ratio: 0.00\n\nUNIT CLASSIFICATION:\n- Over-Exploited: 1 units (100.0%)",
+      "metadata": {
+        "administrative": {
+          "state": "nan",
+          "district": "nan",
+          "assessment_unit": "DISTRICT_SUMMARY",
+          "total_units": 1,
+          "geographical_area_ha": 1648069.4699
+        },
+        "hydro_classification": {
+          "category_distribution": {
+            "Over-Exploited": 1
+          },
+          "avg_extraction_stage": 1245800.039,
+          "dominant_stress_level": "Over-Exploited"
+        },
+        "data_quality_matrix": {
+          "total_parameters": 156,
+          "numeric_parameters": 150,
+          "completeness_score": 100.0,
+          "numeric_completeness": 100.0
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "DISTRICT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "DISTRICT_SUMMARY",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 298,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_ALIPURDUAR_1_cf6873b4",
+      "content": "ASSESSMENT UNIT: 1, ALIPURDUAR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 3,665 ham\n- Current Extraction: 7,636 ham\n- Sustainability Ratio: 0.48",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "ALIPURDUAR",
+          "assessment_unit": "1",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 7636.472,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.4799336028556639,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 251,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_BANKURA_2_4af0b911",
+      "content": "ASSESSMENT UNIT: 2, BANKURA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,373 ham\n- Current Extraction: 58,285 ham\n- Sustainability Ratio: 0.02",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BANKURA",
+          "assessment_unit": "2",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 58284.61,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.023563544094657246,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 249,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_BARDDHAMAN_3_9f616729",
+      "content": "ASSESSMENT UNIT: 3, BARDDHAMAN, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,332 ham\n- Current Extraction: 111,742 ham\n- Sustainability Ratio: 0.01",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BARDDHAMAN",
+          "assessment_unit": "3",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 111741.86100000003,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.011919988843892098,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 253,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_BIRBHUM_4_44f011ba",
+      "content": "ASSESSMENT UNIT: 4, BIRBHUM, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,377 ham\n- Current Extraction: 44,110 ham\n- Sustainability Ratio: 0.03",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "BIRBHUM",
+          "assessment_unit": "4",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 44109.77700000001,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.031214249561592147,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 249,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_DAKSHIN DINAJPUR_5_8ddc0ac6",
+      "content": "ASSESSMENT UNIT: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,609 ham\n- Current Extraction: 54,447 ham\n- Sustainability Ratio: 0.03",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "DAKSHIN DINAJPUR",
+          "assessment_unit": "5",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 54447.015,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.029556254307221412,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 258,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_DARJILING_6_38da456f",
+      "content": "ASSESSMENT UNIT: 6, DARJILING, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 272,417 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 2,983 ham\n- Current Extraction: 3,281 ham\n- Sustainability Ratio: 0.91",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "DARJILING",
+          "assessment_unit": "6",
+          "geographical_area_ha": 272416.9747
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 3280.602,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.9094206116780454,
+          "dominant_aquifer_type": "TGA"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 256,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_HAORA_7_10da3f35",
+      "content": "ASSESSMENT UNIT: 7, HAORA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 70,308 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,571 ham\n- Current Extraction: 16,597 ham\n- Sustainability Ratio: 0.09",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "HAORA",
+          "assessment_unit": "7",
+          "geographical_area_ha": 70308.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 16596.610000000004,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.09468598879997213,
+          "dominant_aquifer_type": "TGA"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 252,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_HUGLI_8_496a25ce",
+      "content": "ASSESSMENT UNIT: 8, HUGLI, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,445 ham\n- Current Extraction: 66,921 ham\n- Sustainability Ratio: 0.02",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "HUGLI",
+          "assessment_unit": "8",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 66920.912,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.021598929365875277,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 247,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_JALPAIGURI_9_b0b69e29",
+      "content": "ASSESSMENT UNIT: 9, JALPAIGURI, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 3,665 ham\n- Current Extraction: 9,313 ham\n- Sustainability Ratio: 0.39",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "JALPAIGURI",
+          "assessment_unit": "9",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 9312.705,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.3935483413736029,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 251,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_KOCH BIHAR_10_18ab04d0",
+      "content": "ASSESSMENT UNIT: 10, KOCH BIHAR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 3,414 ham\n- Current Extraction: 48,615 ham\n- Sustainability Ratio: 0.07",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "KOCH BIHAR",
+          "assessment_unit": "10",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 48614.746,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.07022560458866525,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 253,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_KOLKATA_11_06fb083d",
+      "content": "ASSESSMENT UNIT: 11, KOLKATA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 87,901 hectares\n- Resource Classification: Safe\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 0 ham\n- Current Extraction: 0 ham\n- Sustainability Ratio: 0.00",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "KOLKATA",
+          "assessment_unit": "11",
+          "geographical_area_ha": 87901.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 0.0,
+          "safety_category": "Safe",
+          "sustainability_ratio": 0.0,
+          "dominant_aquifer_type": "TGA"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 236,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_MALDA_12_59a02670",
+      "content": "ASSESSMENT UNIT: 12, MALDA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,463 ham\n- Current Extraction: 68,241 ham\n- Sustainability Ratio: 0.02",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "MALDA",
+          "assessment_unit": "12",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 68240.64499999999,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.021439417934005264,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 248,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_MURSHIDABAD_13_e7cb61b1",
+      "content": "ASSESSMENT UNIT: 13, MURSHIDABAD, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,379 ham\n- Current Extraction: 202,397 ham\n- Sustainability Ratio: 0.01",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "MURSHIDABAD",
+          "assessment_unit": "13",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 202396.784,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.0068138379797190955,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 255,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_NADIA_14_46f57a7e",
+      "content": "ASSESSMENT UNIT: 14, NADIA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,316 ham\n- Current Extraction: 190,818 ham\n- Sustainability Ratio: 0.01",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "NADIA",
+          "assessment_unit": "14",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 190818.275,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.0068971904626797965,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 249,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_NORTH 24 PARGANAS_15_29004f05",
+      "content": "ASSESSMENT UNIT: 15, NORTH 24 PARGANAS, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,111 ham\n- Current Extraction: 107,174 ham\n- Sustainability Ratio: 0.01",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "NORTH 24 PARGANAS",
+          "assessment_unit": "15",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 107173.981,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.010366036909426854,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 261,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_PASCHIM MEDINIPUR_16_889d4181",
+      "content": "ASSESSMENT UNIT: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,542 ham\n- Current Extraction: 124,369 ham\n- Sustainability Ratio: 0.01",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PASCHIM MEDINIPUR",
+          "assessment_unit": "16",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 124369.40799999998,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.012395689328391113,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 261,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_PURBA MEDINIPUR_17_969881e4",
+      "content": "ASSESSMENT UNIT: 17, PURBA MEDINIPUR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 228,991 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,618 ham\n- Current Extraction: 33,002 ham\n- Sustainability Ratio: 0.05",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PURBA MEDINIPUR",
+          "assessment_unit": "17",
+          "geographical_area_ha": 228991.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 33002.234,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.0490131567395978,
+          "dominant_aquifer_type": "TGA"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 264,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_PURULIYA_18_35975e12",
+      "content": "ASSESSMENT UNIT: 18, PURULIYA, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,361 ham\n- Current Extraction: 8,843 ham\n- Sustainability Ratio: 0.15",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "PURULIYA",
+          "assessment_unit": "18",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 8842.926,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.15392812500228242,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 250,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_SOUTH 24 PARGANAS_19_9bcad84f",
+      "content": "ASSESSMENT UNIT: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 988,452 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,595 ham\n- Current Extraction: 11,648 ham\n- Sustainability Ratio: 0.14",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "SOUTH 24 PARGANAS",
+          "assessment_unit": "19",
+          "geographical_area_ha": 988452.4952
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 11648.034,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.13693296766364454,
+          "dominant_aquifer_type": "TGA"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 266,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_WEST BENGAL_UTTAR DINAJPUR_20_a14410da",
+      "content": "ASSESSMENT UNIT: 20, UTTAR DINAJPUR, WEST BENGAL\n\nBASIC INFORMATION:\n- Geographical Area: 0 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 2,037 ham\n- Current Extraction: 78,362 ham\n- Sustainability Ratio: 0.03",
+      "metadata": {
+        "administrative": {
+          "state": "WEST BENGAL",
+          "district": "UTTAR DINAJPUR",
+          "assessment_unit": "20",
+          "geographical_area_ha": 0.0
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 78362.44200000001,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.025989474675392574,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 257,
+      "data_points": 1
+    },
+    {
+      "chunk_id": "UNIT_nan_nan_Total_7d3d823f",
+      "content": "ASSESSMENT UNIT: Total, nan, nan\n\nBASIC INFORMATION:\n- Geographical Area: 1,648,069 hectares\n- Resource Classification: Over-Exploited\n\nGROUNDWATER RESOURCES:\n- Annual Recharge: 1,729 ham\n- Current Extraction: 1,245,800 ham\n- Sustainability Ratio: 0.00",
+      "metadata": {
+        "administrative": {
+          "state": "nan",
+          "district": "nan",
+          "assessment_unit": "Total",
+          "geographical_area_ha": 1648069.4699
+        },
+        "hydro_classification": {
+          "stage_extraction_percent": 1245800.039,
+          "safety_category": "Over-Exploited",
+          "sustainability_ratio": 0.0013875493694599467,
+          "dominant_aquifer_type": "TGA_Tot"
+        },
+        "data_quality_matrix": {
+          "completeness_score": 100.0,
+          "missing_parameters": "0",
+          "data_reliability": "High"
+        },
+        "temporal_context": {
+          "assessment_year": "AY_2024-25",
+          "aggregation_level": "UNIT",
+          "data_freshness": "CURRENT"
+        },
+        "special_conditions": {},
+        "chunk_type": "ASSESSMENT_UNIT",
+        "confidence_score": 1.0
+      },
+      "chunk_size": 252,
+      "data_points": 1
+    }
+  ],
+  "parameter_chunks": [
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_ALIPURDUAR_1_94460ea2",
+      "content": "CORE ASSESSMENT DATA: 1, ALIPURDUAR, WEST BENGAL\n\n- RR_C_NC: 3665.0\n- RR_Tot: 3665.0\n- GWR_Tot: 172553.53100000002\n- GWE_Tot: 7636.472\n- AGR_Tot: 172553.53100000002\n- EFR_Tot: 17255.353000000003\n- AER_Tot: 155298.178",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 216,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_BANKURA_2_d13aa43f",
+      "content": "CORE ASSESSMENT DATA: 2, BANKURA, WEST BENGAL\n\n- RR_C: 1379.6121903229664\n- RR_C_NC: 1369.2193285236465\n- RR_Tot: 1373.3920013384447\n- GWR_Tot: 195440.112\n- GWE_Tot: 58284.61\n- AGR_Tot: 195440.112\n- EFR_Tot: 17036.855\n- AER_Tot: 178403.257",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 239,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_BARDDHAMAN_3_8d8bbfdb",
+      "content": "CORE ASSESSMENT DATA: 3, BARDDHAMAN, WEST BENGAL\n\n- RR_C: 1321.7127674326896\n- RR_C_NC: 1348.6711801299284\n- RR_Tot: 1331.961748435731\n- GWR_Tot: 237863.4730000001\n- GWE_Tot: 111741.86100000003\n- AGR_Tot: 237863.4730000001\n- EFR_Tot: 22186.091000000004\n- AER_Tot: 215677.38",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 273,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_BIRBHUM_4_16e2812e",
+      "content": "CORE ASSESSMENT DATA: 4, BIRBHUM, WEST BENGAL\n\n- RR_C: 1369.5030053349606\n- RR_C_NC: 1415.544251447477\n- RR_Tot: 1376.8536185984271\n- GWR_Tot: 126320.999\n- GWE_Tot: 44109.77700000001\n- AGR_Tot: 126320.999\n- EFR_Tot: 11662.732\n- AER_Tot: 114658.268",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 247,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_DAKSHIN DINAJPUR_5_283ce29b",
+      "content": "CORE ASSESSMENT DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\n- RR_C_NC: 1609.249851165353\n- RR_Tot: 1609.249851165353\n- GWR_Tot: 77338.517\n- GWE_Tot: 54447.015\n- AGR_Tot: 77338.517\n- EFR_Tot: 7733.851999999999\n- AER_Tot: 69604.66500000001",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 233,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_DARJILING_6_bad10ad7",
+      "content": "CORE ASSESSMENT DATA: 6, DARJILING, WEST BENGAL\n\n- RR_C_NC: 2983.447986932831\n- RR_Tot: 2983.447986932831\n- GWR_Tot: 45184.702000000005\n- GWE_Tot: 3280.602\n- AGR_Tot: 45184.702000000005\n- EFR_Tot: 4355.415999999999\n- AER_Tot: 40829.28600000001",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 243,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_HAORA_7_2bd253f9",
+      "content": "CORE ASSESSMENT DATA: 7, HAORA, WEST BENGAL\n\n- RR_C: 1578.328121571209\n- RR_C_NC: 1568.4019797613505\n- RR_Tot: 1571.4665232634948\n- GWR_Tot: 25210.632\n- GWE_Tot: 16596.610000000004\n- AGR_Tot: 25210.632\n- EFR_Tot: 2336.008\n- AER_Tot: 22874.623000000003",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 251,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_HUGLI_8_67815ccd",
+      "content": "CORE ASSESSMENT DATA: 8, HUGLI, WEST BENGAL\n\n- RR_C: 1432.9344008264463\n- RR_C_NC: 1463.1068664073632\n- RR_Tot: 1445.4200729868846\n- GWR_Tot: 116016.75499999998\n- GWE_Tot: 66920.912\n- AGR_Tot: 116016.75499999998\n- EFR_Tot: 11490.31\n- AER_Tot: 104526.446",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 253,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_JALPAIGURI_9_1b12ac02",
+      "content": "CORE ASSESSMENT DATA: 9, JALPAIGURI, WEST BENGAL\n\n- RR_C_NC: 3665.0\n- RR_Tot: 3665.0\n- GWR_Tot: 222873.901\n- GWE_Tot: 9312.705\n- AGR_Tot: 222873.901\n- EFR_Tot: 22287.39\n- AER_Tot: 200586.511",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 190,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_KOCH BIHAR_10_fb68778d",
+      "content": "CORE ASSESSMENT DATA: 10, KOCH BIHAR, WEST BENGAL\n\n- RR_C_NC: 3414.0\n- RR_Tot: 3414.0\n- GWR_Tot: 211596.925\n- GWE_Tot: 48614.746\n- AGR_Tot: 211596.925\n- EFR_Tot: 21159.696000000004\n- AER_Tot: 190437.229",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 202,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_KOLKATA_11_f4c2d7d6",
+      "content": "CORE ASSESSMENT DATA: 11, KOLKATA, WEST BENGAL",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 46,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_MALDA_12_f63dc966",
+      "content": "CORE ASSESSMENT DATA: 12, MALDA, WEST BENGAL\n\n- RR_C_NC: 1463.0397296805045\n- RR_Tot: 1463.0397296805045\n- GWR_Tot: 104173.15799999998\n- GWE_Tot: 68240.64499999999\n- AGR_Tot: 104173.15799999998\n- EFR_Tot: 10417.314\n- AER_Tot: 93755.844",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 235,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_MURSHIDABAD_13_59a26d31",
+      "content": "CORE ASSESSMENT DATA: 13, MURSHIDABAD, WEST BENGAL\n\n- RR_C: 1381.5047894744605\n- RR_C_NC: 1377.6228719779524\n- RR_Tot: 1379.0989006060402\n- GWR_Tot: 242637.05400000003\n- GWE_Tot: 202396.784\n- AGR_Tot: 242637.05400000003\n- EFR_Tot: 23640.502\n- AER_Tot: 218996.55100000004",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 270,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_NADIA_14_c2a58c64",
+      "content": "CORE ASSESSMENT DATA: 14, NADIA, WEST BENGAL\n\n- RR_C_NC: 1316.109993332201\n- RR_Tot: 1316.109993332201\n- GWR_Tot: 182609.561\n- GWE_Tot: 190818.275\n- AGR_Tot: 182609.561\n- EFR_Tot: 18260.955\n- AER_Tot: 164348.606",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 211,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_NORTH 24 PARGANAS_15_cd64e71a",
+      "content": "CORE ASSESSMENT DATA: 15, NORTH 24 PARGANAS, WEST BENGAL\n\n- RR_C_NC: 1110.9694531422492\n- RR_Tot: 1110.9694531422492\n- GWR_Tot: 130879.786\n- GWE_Tot: 107173.981\n- AGR_Tot: 130879.786\n- EFR_Tot: 13066.215999999997\n- AER_Tot: 117813.57",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 233,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_PASCHIM MEDINIPUR_16_740cfefe",
+      "content": "CORE ASSESSMENT DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\n- RR_C: 1513.4057977267285\n- RR_C_NC: 1569.4386668563434\n- RR_Tot: 1541.6445559196095\n- GWR_Tot: 306990.36600000004\n- GWE_Tot: 124369.40799999998\n- AGR_Tot: 306990.36600000004\n- EFR_Tot: 30163.812000000005\n- AER_Tot: 276826.553",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 285,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_PURBA MEDINIPUR_17_45bbba9e",
+      "content": "CORE ASSESSMENT DATA: 17, PURBA MEDINIPUR, WEST BENGAL\n\n- RR_C: 1618.0\n- RR_C_NC: 1617.4972128952247\n- RR_Tot: 1617.5437168120402\n- GWR_Tot: 64932.907\n- GWE_Tot: 33002.234\n- AGR_Tot: 64932.907\n- EFR_Tot: 6379.76\n- AER_Tot: 58553.14700000001",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 240,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_PURULIYA_18_61962121",
+      "content": "CORE ASSESSMENT DATA: 18, PURULIYA, WEST BENGAL\n\n- RR_C_NC: 1361.1751726420582\n- RR_Tot: 1361.1751726420582\n- GWR_Tot: 84536.077\n- GWE_Tot: 8842.926\n- AGR_Tot: 84536.077\n- EFR_Tot: 8181.307\n- AER_Tot: 76354.77000000002",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 218,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_SOUTH 24 PARGANAS_19_da19c54e",
+      "content": "CORE ASSESSMENT DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\n- RR_C_NC: 1595.0\n- RR_Tot: 1595.0\n- GWR_Tot: 20765.572\n- GWE_Tot: 11648.034\n- AGR_Tot: 20765.572\n- EFR_Tot: 1546.332\n- AER_Tot: 19219.24",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 195,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_WEST BENGAL_UTTAR DINAJPUR_20_390d0745",
+      "content": "CORE ASSESSMENT DATA: 20, UTTAR DINAJPUR, WEST BENGAL\n\n- RR_C_NC: 2036.5987278503944\n- RR_Tot: 2036.5987278503944\n- GWR_Tot: 129013.83699999998\n- GWE_Tot: 78362.44200000001\n- AGR_Tot: 129013.83699999998\n- EFR_Tot: 12901.386\n- AER_Tot: 116112.451",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 245,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_core_assessment_nan_nan_Total_d7904d6a",
+      "content": "CORE ASSESSMENT DATA: Total, nan, nan\n\n- RR_C: 1404.0327869425105\n- RR_C_NC: 1852.4326774202573\n- RR_Tot: 1728.6090599751765\n- GWR_Tot: 2696937.8650000007\n- GWE_Tot: 1245800.039\n- AGR_Tot: 2696937.8650000007\n- EFR_Tot: 262061.287\n- AER_Tot: 2434876.575",
+      "parameter_group": "core_assessment",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 252,
+      "parameter_count": 10
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_ALIPURDUAR_1_16d29208",
+      "content": "ADMINISTRATIVE DATA: 1, ALIPURDUAR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: ALIPURDUAR\n- S.No: 1",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 102,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_BANKURA_2_ac1a5bed",
+      "content": "ADMINISTRATIVE DATA: 2, BANKURA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: BANKURA\n- S.No: 2",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 96,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_BARDDHAMAN_3_17607954",
+      "content": "ADMINISTRATIVE DATA: 3, BARDDHAMAN, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: BARDDHAMAN\n- S.No: 3",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 102,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_BIRBHUM_4_a204e7fa",
+      "content": "ADMINISTRATIVE DATA: 4, BIRBHUM, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: BIRBHUM\n- S.No: 4",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 96,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_DAKSHIN DINAJPUR_5_34278e6e",
+      "content": "ADMINISTRATIVE DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: DAKSHIN DINAJPUR\n- S.No: 5",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 114,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_DARJILING_6_006ca71e",
+      "content": "ADMINISTRATIVE DATA: 6, DARJILING, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: DARJILING\n- S.No: 6",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 100,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_HAORA_7_db16fd09",
+      "content": "ADMINISTRATIVE DATA: 7, HAORA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: HAORA\n- S.No: 7",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 92,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_HUGLI_8_654c85ca",
+      "content": "ADMINISTRATIVE DATA: 8, HUGLI, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: HUGLI\n- S.No: 8",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 92,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_JALPAIGURI_9_1adc2d82",
+      "content": "ADMINISTRATIVE DATA: 9, JALPAIGURI, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: JALPAIGURI\n- S.No: 9",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 102,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_KOCH BIHAR_10_b6265fd5",
+      "content": "ADMINISTRATIVE DATA: 10, KOCH BIHAR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: KOCH BIHAR\n- S.No: 10",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 104,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_KOLKATA_11_8c196e70",
+      "content": "ADMINISTRATIVE DATA: 11, KOLKATA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: KOLKATA\n- S.No: 11",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 98,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_MALDA_12_4569af52",
+      "content": "ADMINISTRATIVE DATA: 12, MALDA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: MALDA\n- S.No: 12",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 94,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_MURSHIDABAD_13_4608a33c",
+      "content": "ADMINISTRATIVE DATA: 13, MURSHIDABAD, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: MURSHIDABAD\n- S.No: 13",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 106,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_NADIA_14_31849f37",
+      "content": "ADMINISTRATIVE DATA: 14, NADIA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: NADIA\n- S.No: 14",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 94,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_NORTH 24 PARGANAS_15_0c158f09",
+      "content": "ADMINISTRATIVE DATA: 15, NORTH 24 PARGANAS, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: NORTH 24 PARGANAS\n- S.No: 15",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 118,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_PASCHIM MEDINIPUR_16_2fcb8559",
+      "content": "ADMINISTRATIVE DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: PASCHIM MEDINIPUR\n- S.No: 16",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 118,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_PURBA MEDINIPUR_17_710b242f",
+      "content": "ADMINISTRATIVE DATA: 17, PURBA MEDINIPUR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: PURBA MEDINIPUR\n- S.No: 17",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 114,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_PURULIYA_18_4c2d295b",
+      "content": "ADMINISTRATIVE DATA: 18, PURULIYA, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: PURULIYA\n- S.No: 18",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 100,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_SOUTH 24 PARGANAS_19_c2cee697",
+      "content": "ADMINISTRATIVE DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: SOUTH 24 PARGANAS\n- S.No: 19",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 118,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_WEST BENGAL_UTTAR DINAJPUR_20_a0878ad4",
+      "content": "ADMINISTRATIVE DATA: 20, UTTAR DINAJPUR, WEST BENGAL\n\n- STATE: WEST BENGAL\n- DISTRICT: UTTAR DINAJPUR\n- S.No: 20",
+      "parameter_group": "administrative",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 112,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_administrative_nan_nan_Total_57050fc4",
+      "content": "ADMINISTRATIVE DATA: Total, nan, nan\n\n- STATE: nan\n- DISTRICT: nan\n- S.No: Total",
+      "parameter_group": "administrative",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 80,
+      "parameter_count": 3
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_ALIPURDUAR_1_1e767e89",
+      "content": "RECHARGE SOURCES DATA: 1, ALIPURDUAR, WEST BENGAL\n\n- GWR_RR_Tot: 168612.10499999998\n- GWR_SWI_IRR_Tot: 2509.38\n- GWR_GWI_IRR_Tot: 1432.046",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 138,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_BANKURA_2_56bc5e97",
+      "content": "RECHARGE SOURCES DATA: 2, BANKURA, WEST BENGAL\n\n- GWR_RR_Tot: 102316.234\n- GWR_SWI_IRR_Tot: 69211.88200000001\n- GWR_GWI_IRR_Tot: 23911.996",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 138,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_BARDDHAMAN_3_5e2ac97a",
+      "content": "RECHARGE SOURCES DATA: 3, BARDDHAMAN, WEST BENGAL\n\n- GWR_RR_Tot: 188740.737\n- GWR_SWI_IRR_Tot: 19789.688\n- GWR_GWI_IRR_Tot: 29333.047999999995",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 142,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_BIRBHUM_4_8a5e0ad7",
+      "content": "RECHARGE SOURCES DATA: 4, BIRBHUM, WEST BENGAL\n\n- GWR_RR_Tot: 110515.84699999998\n- GWR_SWI_IRR_Tot: 3499.94\n- GWR_GWI_IRR_Tot: 12305.211999999998",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 145,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_DAKSHIN DINAJPUR_5_315b5a67",
+      "content": "RECHARGE SOURCES DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\n- GWR_RR_Tot: 59998.32599999999\n- GWR_SWI_IRR_Tot: 100.15\n- GWR_GWI_IRR_Tot: 17240.039999999997",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 152,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_DARJILING_6_cd933422",
+      "content": "RECHARGE SOURCES DATA: 6, DARJILING, WEST BENGAL\n\n- GWR_RR_Tot: 39727.632\n- GWR_SWI_IRR_Tot: 5059.576999999999\n- GWR_GWI_IRR_Tot: 397.494",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 137,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_HAORA_7_14d87ae4",
+      "content": "RECHARGE SOURCES DATA: 7, HAORA, WEST BENGAL\n\n- GWR_RR_Tot: 20043.961\n- GWR_SWI_IRR_Tot: 3476.8710000000005\n- GWR_GWI_IRR_Tot: 1689.8000000000002",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 145,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_HUGLI_8_ab67cd43",
+      "content": "RECHARGE SOURCES DATA: 8, HUGLI, WEST BENGAL\n\n- GWR_RR_Tot: 95735.92300000002\n- GWR_SWI_IRR_Tot: 1716.2200000000005\n- GWR_GWI_IRR_Tot: 18564.612",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 144,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_JALPAIGURI_9_06915d8d",
+      "content": "RECHARGE SOURCES DATA: 9, JALPAIGURI, WEST BENGAL\n\n- GWR_RR_Tot: 214697.737\n- GWR_SWI_IRR_Tot: 6806.201999999999\n- GWR_GWI_IRR_Tot: 1369.962",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 140,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_KOCH BIHAR_10_767a88de",
+      "content": "RECHARGE SOURCES DATA: 10, KOCH BIHAR, WEST BENGAL\n\n- GWR_RR_Tot: 197189.683\n- GWR_SWI_IRR_Tot: 38.33\n- GWR_GWI_IRR_Tot: 14368.909999999998",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 139,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_KOLKATA_11_a363b68a",
+      "content": "RECHARGE SOURCES DATA: 11, KOLKATA, WEST BENGAL",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 47,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_MALDA_12_73dc988a",
+      "content": "RECHARGE SOURCES DATA: 12, MALDA, WEST BENGAL\n\n- GWR_RR_Tot: 83673.243\n- GWR_SWI_IRR_Tot: 402.99099999999993\n- GWR_GWI_IRR_Tot: 20096.924000000003",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 146,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_MURSHIDABAD_13_11e18f5c",
+      "content": "RECHARGE SOURCES DATA: 13, MURSHIDABAD, WEST BENGAL\n\n- GWR_RR_Tot: 178389.099\n- GWR_SWI_IRR_Tot: 944.375\n- GWR_GWI_IRR_Tot: 63303.58",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 132,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_NADIA_14_2f54643c",
+      "content": "RECHARGE SOURCES DATA: 14, NADIA, WEST BENGAL\n\n- GWR_RR_Tot: 120874.48\n- GWR_SWI_IRR_Tot: 799.532\n- GWR_GWI_IRR_Tot: 60935.54800000001",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 134,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_NORTH 24 PARGANAS_15_ab4dd9c9",
+      "content": "RECHARGE SOURCES DATA: 15, NORTH 24 PARGANAS, WEST BENGAL\n\n- GWR_RR_Tot: 101456.154\n- GWR_SWI_IRR_Tot: 685.2669999999999\n- GWR_GWI_IRR_Tot: 28738.363999999998",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 158,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_PASCHIM MEDINIPUR_16_a5ac47da",
+      "content": "RECHARGE SOURCES DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\n- GWR_RR_Tot: 263673.873\n- GWR_SWI_IRR_Tot: 5603.830000000001\n- GWR_GWI_IRR_Tot: 37712.664",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 149,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_PURBA MEDINIPUR_17_2d1ad531",
+      "content": "RECHARGE SOURCES DATA: 17, PURBA MEDINIPUR, WEST BENGAL\n\n- GWR_RR_Tot: 55563.913\n- GWR_SWI_IRR_Tot: 2037.778\n- GWR_GWI_IRR_Tot: 7331.215999999999",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 145,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_PURULIYA_18_74666558",
+      "content": "RECHARGE SOURCES DATA: 18, PURULIYA, WEST BENGAL\n\n- GWR_RR_Tot: 51731.03\n- GWR_SWI_IRR_Tot: 32046.087000000003\n- GWR_GWI_IRR_Tot: 758.9600000000002",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 147,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_SOUTH 24 PARGANAS_19_6073b365",
+      "content": "RECHARGE SOURCES DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\n- GWR_RR_Tot: 5688.164\n- GWR_SWI_IRR_Tot: 11300.88\n- GWR_GWI_IRR_Tot: 3776.528",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 137,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_WEST BENGAL_UTTAR DINAJPUR_20_2b74bc55",
+      "content": "RECHARGE SOURCES DATA: 20, UTTAR DINAJPUR, WEST BENGAL\n\n- GWR_RR_Tot: 104517.605\n- GWR_SWI_IRR_Tot: 189.904\n- GWR_GWI_IRR_Tot: 24306.328",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 136,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_recharge_sources_nan_nan_Total_44876ec8",
+      "content": "RECHARGE SOURCES DATA: Total, nan, nan\n\n- GWR_RR_Tot: 2163145.7460000003\n- GWR_SWI_IRR_Tot: 166218.88400000005\n- GWR_GWI_IRR_Tot: 367573.232",
+      "parameter_group": "recharge_sources",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 140,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_ALIPURDUAR_1_5e92c132",
+      "content": "AQUIFER RESOURCES DATA: 1, ALIPURDUAR, WEST BENGAL\n\n- TGA_Tot: 266728.0\n- TGAH_FR: 155298.178",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 93,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_BANKURA_2_b8fddfc7",
+      "content": "AQUIFER RESOURCES DATA: 2, BANKURA, WEST BENGAL\n\n- TGA_Tot: 687365.0\n- TGAH_FR: 178403.257",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 90,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_BARDDHAMAN_3_91d1506b",
+      "content": "AQUIFER RESOURCES DATA: 3, BARDDHAMAN, WEST BENGAL\n\n- TGA_Tot: 744597.0\n- TGAH_FR: 215677.38",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 92,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_BIRBHUM_4_f314b309",
+      "content": "AQUIFER RESOURCES DATA: 4, BIRBHUM, WEST BENGAL\n\n- TGA_Tot: 454361.0\n- TGAH_FR: 114658.268",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 90,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_DAKSHIN DINAJPUR_5_57b8acfc",
+      "content": "AQUIFER RESOURCES DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\n- TGA_Tot: 225082.0\n- TGAH_FR: 69604.66500000001",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 106,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_DARJILING_6_826e3e55",
+      "content": "AQUIFER RESOURCES DATA: 6, DARJILING, WEST BENGAL\n\n- TGA: 272416.9747\n- TGA_Tot: 80201.0\n- TGAH_FR: 40829.28600000001",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 117,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_HAORA_7_03d54814",
+      "content": "AQUIFER RESOURCES DATA: 7, HAORA, WEST BENGAL\n\n- TGA: 70308.0\n- TGA_Tot: 59041.0\n- TGAH_FR: 22874.623000000003",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 110,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_HUGLI_8_8570d55d",
+      "content": "AQUIFER RESOURCES DATA: 8, HUGLI, WEST BENGAL\n\n- TGA_Tot: 313755.0\n- TGAH_FR: 104526.446",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 88,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_JALPAIGURI_9_7ec7c84c",
+      "content": "AQUIFER RESOURCES DATA: 9, JALPAIGURI, WEST BENGAL\n\n- TGA_Tot: 339631.0\n- TGAH_FR: 200586.511",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 93,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_KOCH BIHAR_10_0b8017c2",
+      "content": "AQUIFER RESOURCES DATA: 10, KOCH BIHAR, WEST BENGAL\n\n- TGA_Tot: 338843.0\n- TGAH_FR: 190437.229",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 94,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_KOLKATA_11_bb14b025",
+      "content": "AQUIFER RESOURCES DATA: 11, KOLKATA, WEST BENGAL\n\n- TGA: 87901.0",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 64,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_MALDA_12_f5ff45df",
+      "content": "AQUIFER RESOURCES DATA: 12, MALDA, WEST BENGAL\n\n- TGA_Tot: 367861.0\n- TGAH_FR: 93755.844",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 88,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_MURSHIDABAD_13_3f5d3e3f",
+      "content": "AQUIFER RESOURCES DATA: 13, MURSHIDABAD, WEST BENGAL\n\n- TGA_Tot: 535113.0\n- TGAH_FR: 218996.551",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 95,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_NADIA_14_cfd6c396",
+      "content": "AQUIFER RESOURCES DATA: 14, NADIA, WEST BENGAL\n\n- TGA_Tot: 394433.0\n- TGAH_FR: 164348.606",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 89,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_NORTH 24 PARGANAS_15_b126ddb6",
+      "content": "AQUIFER RESOURCES DATA: 15, NORTH 24 PARGANAS, WEST BENGAL\n\n- TGA_Tot: 398568.0\n- TGAH_FR: 117813.57",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 100,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_PASCHIM MEDINIPUR_16_a34add88",
+      "content": "AQUIFER RESOURCES DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\n- TGA_Tot: 934538.0\n- TGAH_FR: 276826.553",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 101,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_PURBA MEDINIPUR_17_a81c435c",
+      "content": "AQUIFER RESOURCES DATA: 17, PURBA MEDINIPUR, WEST BENGAL\n\n- TGA: 228991.0\n- TGA_Tot: 167041.0\n- TGAH_FR: 58553.147",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 114,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_PURULIYA_18_d71867c6",
+      "content": "AQUIFER RESOURCES DATA: 18, PURULIYA, WEST BENGAL\n\n- TGA_Tot: 622386.0\n- TGAH_FR: 76354.77000000002",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 99,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_SOUTH 24 PARGANAS_19_f194b7cf",
+      "content": "AQUIFER RESOURCES DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\n- TGA: 988452.4952\n- TGA_Tot: 15362.0\n- TGAH_FR: 19219.24",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 117,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_WEST BENGAL_UTTAR DINAJPUR_20_a9fd437d",
+      "content": "AQUIFER RESOURCES DATA: 20, UTTAR DINAJPUR, WEST BENGAL\n\n- TGA_Tot: 311913.0\n- TGAH_FR: 116112.451",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 98,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_aquifer_resources_nan_nan_Total_54f3895e",
+      "content": "AQUIFER RESOURCES DATA: Total, nan, nan\n\n- TGA: 1648069.4699\n- TGA_Tot: 7256819.0\n- TGAH_FR: 2434876.575",
+      "parameter_group": "aquifer_resources",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 104,
+      "parameter_count": 9
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_ALIPURDUAR_1_989e74b4",
+      "content": "USAGE ALLOCATION DATA: 1, ALIPURDUAR, WEST BENGAL\n\n- GWE_DOM_Tot: 3424.57089\n- GWE_IRR_Tot: 4211.9\n- GWE_Tot: 7636.472\n- DOM_DOM_Tot: 4056.0390000000007\n- NAG_Tot: 147030.23799999998",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 182,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_BANKURA_2_d1fb4547",
+      "content": "USAGE ALLOCATION DATA: 2, BANKURA, WEST BENGAL\n\n- GWE_DOM_Tot: 6125.50884\n- GWE_IRR_Tot: 52159.10000000001\n- GWE_Tot: 58284.61\n- DOM_DOM_Tot: 7164.617999999999\n- NAG_Tot: 119156.612",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 181,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_BARDDHAMAN_3_900b5309",
+      "content": "USAGE ALLOCATION DATA: 3, BARDDHAMAN, WEST BENGAL\n\n- GWE_DOM_Tot: 17682.263669999997\n- GWE_IRR_Tot: 94059.6\n- GWE_Tot: 111741.86100000003\n- DOM_DOM_Tot: 20050.671\n- NAG_Tot: 137738.839",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 184,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_BIRBHUM_4_4eee276c",
+      "content": "USAGE ALLOCATION DATA: 4, BIRBHUM, WEST BENGAL\n\n- GWE_DOM_Tot: 7917.97566\n- GWE_IRR_Tot: 36191.8\n- GWE_Tot: 44109.77700000001\n- DOM_DOM_Tot: 8221.744999999999\n- NAG_Tot: 91759.53",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 178,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_DAKSHIN DINAJPUR_5_a66db2aa",
+      "content": "USAGE ALLOCATION DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL\n\n- GWE_DOM_Tot: 3741.01713\n- GWE_IRR_Tot: 50706.0\n- GWE_Tot: 54447.015\n- DOM_DOM_Tot: 4303.3240000000005\n- NAG_Tot: 14996.232",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 181,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_DARJILING_6_6511926f",
+      "content": "USAGE ALLOCATION DATA: 6, DARJILING, WEST BENGAL\n\n- GWE_DOM_Tot: 2111.50164\n- GWE_IRR_Tot: 1169.1\n- GWE_Tot: 3280.602\n- DOM_DOM_Tot: 2390.486\n- NAG_Tot: 37874.389",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 162,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_HAORA_7_bde18e8f",
+      "content": "USAGE ALLOCATION DATA: 7, HAORA, WEST BENGAL\n\n- GWE_DOM_Tot: 11626.60926\n- GWE_IRR_Tot: 4970.0\n- GWE_Tot: 16596.610000000004\n- DOM_DOM_Tot: 14108.463\n- NAG_Tot: 9234.792",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 169,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_HUGLI_8_b9f06423",
+      "content": "USAGE ALLOCATION DATA: 8, HUGLI, WEST BENGAL\n\n- GWE_DOM_Tot: 12319.11135\n- GWE_IRR_Tot: 54601.8\n- GWE_Tot: 66920.912\n- DOM_DOM_Tot: 13773.538000000002\n- NAG_Tot: 55946.869",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 171,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_JALPAIGURI_9_9984302a",
+      "content": "USAGE ALLOCATION DATA: 9, JALPAIGURI, WEST BENGAL\n\n- GWE_DOM_Tot: 5283.403469999999\n- GWE_IRR_Tot: 4029.3\n- GWE_Tot: 9312.705\n- DOM_DOM_Tot: 6257.629\n- NAG_Tot: 190299.581",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 171,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_KOCH BIHAR_10_8de75a49",
+      "content": "USAGE ALLOCATION DATA: 10, KOCH BIHAR, WEST BENGAL\n\n- GWE_DOM_Tot: 6353.24475\n- GWE_IRR_Tot: 42261.5\n- GWE_Tot: 48614.746\n- DOM_DOM_Tot: 7532.21\n- NAG_Tot: 140643.51799999998",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 174,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_KOLKATA_11_89ad9dce",
+      "content": "USAGE ALLOCATION DATA: 11, KOLKATA, WEST BENGAL",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 47,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_MALDA_12_628d1a33",
+      "content": "USAGE ALLOCATION DATA: 12, MALDA, WEST BENGAL\n\n- GWE_DOM_Tot: 9132.04596\n- GWE_IRR_Tot: 59108.600000000006\n- GWE_Tot: 68240.64499999999\n- DOM_DOM_Tot: 11737.807\n- NAG_Tot: 27342.418000000005",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 190,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_MURSHIDABAD_13_d0b51599",
+      "content": "USAGE ALLOCATION DATA: 13, MURSHIDABAD, WEST BENGAL\n\n- GWE_DOM_Tot: 16209.78432\n- GWE_IRR_Tot: 186187.00000000003\n- GWE_Tot: 202396.784\n- DOM_DOM_Tot: 19513.636\n- NAG_Tot: 65495.762",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 181,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_NADIA_14_95d89960",
+      "content": "USAGE ALLOCATION DATA: 14, NADIA, WEST BENGAL\n\n- GWE_DOM_Tot: 11596.07409\n- GWE_IRR_Tot: 179222.2\n- GWE_Tot: 190818.275\n- DOM_DOM_Tot: 13502.618\n- NAG_Tot: 4877.551",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 164,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_NORTH 24 PARGANAS_15_e181aa62",
+      "content": "USAGE ALLOCATION DATA: 15, NORTH 24 PARGANAS, WEST BENGAL\n\n- GWE_DOM_Tot: 22649.382959999995\n- GWE_IRR_Tot: 84524.59999999999\n- GWE_Tot: 107173.981\n- DOM_DOM_Tot: 26556.61700000001\n- NAG_Tot: 14703.293",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 201,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_PASCHIM MEDINIPUR_16_3edf573c",
+      "content": "USAGE ALLOCATION DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL\n\n- GWE_DOM_Tot: 13449.806159999998\n- GWE_IRR_Tot: 110919.6\n- GWE_Tot: 124369.40799999998\n- DOM_DOM_Tot: 15048.109000000004\n- NAG_Tot: 175521.064",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 202,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_PURBA MEDINIPUR_17_d493e610",
+      "content": "USAGE ALLOCATION DATA: 17, PURBA MEDINIPUR, WEST BENGAL\n\n- GWE_DOM_Tot: 11439.835110000004\n- GWE_IRR_Tot: 21562.4\n- GWE_Tot: 33002.234\n- DOM_DOM_Tot: 12236.251\n- NAG_Tot: 31679.770000000004",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 189,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_PURULIYA_18_8b430074",
+      "content": "USAGE ALLOCATION DATA: 18, PURULIYA, WEST BENGAL\n\n- GWE_DOM_Tot: 6610.125179999999\n- GWE_IRR_Tot: 2232.8\n- GWE_Tot: 8842.926\n- DOM_DOM_Tot: 7972.288\n- NAG_Tot: 66149.683",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 169,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_SOUTH 24 PARGANAS_19_ea6f1b4e",
+      "content": "USAGE ALLOCATION DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL\n\n- GWE_DOM_Tot: 537.6340499999999\n- GWE_IRR_Tot: 11110.4\n- GWE_Tot: 11648.034\n- DOM_DOM_Tot: 630.381\n- NAG_Tot: 10840.124999999998",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 188,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_WEST BENGAL_UTTAR DINAJPUR_20_51e7b190",
+      "content": "USAGE ALLOCATION DATA: 20, UTTAR DINAJPUR, WEST BENGAL\n\n- GWE_DOM_Tot: 6873.242729999999\n- GWE_IRR_Tot: 71489.2\n- GWE_Tot: 78362.44200000001\n- DOM_DOM_Tot: 8962.828\n- NAG_Tot: 38265.05",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 184,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_usage_allocation_nan_nan_Total_3332b0de",
+      "content": "USAGE ALLOCATION DATA: Total, nan, nan\n\n- GWE_DOM_Tot: 175083.13722\n- GWE_IRR_Tot: 1070716.9\n- GWE_Tot: 1245800.039\n- DOM_DOM_Tot: 204019.258\n- NAG_Tot: 1379555.316",
+      "parameter_group": "usage_allocation",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 164,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_ALIPURDUAR_1_f050d78a",
+      "content": "ENVIRONMENTAL DATA: 1, ALIPURDUAR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 46,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_BANKURA_2_ad1d413c",
+      "content": "ENVIRONMENTAL DATA: 2, BANKURA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 43,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_BARDDHAMAN_3_7f9c9e41",
+      "content": "ENVIRONMENTAL DATA: 3, BARDDHAMAN, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 46,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_BIRBHUM_4_eb188309",
+      "content": "ENVIRONMENTAL DATA: 4, BIRBHUM, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 43,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_DAKSHIN DINAJPUR_5_92c17ad2",
+      "content": "ENVIRONMENTAL DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 52,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_DARJILING_6_98363728",
+      "content": "ENVIRONMENTAL DATA: 6, DARJILING, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 45,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_HAORA_7_7c24581a",
+      "content": "ENVIRONMENTAL DATA: 7, HAORA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 41,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_HUGLI_8_0ba694f7",
+      "content": "ENVIRONMENTAL DATA: 8, HUGLI, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 41,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_JALPAIGURI_9_547b7d6c",
+      "content": "ENVIRONMENTAL DATA: 9, JALPAIGURI, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 46,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_KOCH BIHAR_10_3ced9ca2",
+      "content": "ENVIRONMENTAL DATA: 10, KOCH BIHAR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 47,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_KOLKATA_11_d6cff9c6",
+      "content": "ENVIRONMENTAL DATA: 11, KOLKATA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 44,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_MALDA_12_62fcd48c",
+      "content": "ENVIRONMENTAL DATA: 12, MALDA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 42,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_MURSHIDABAD_13_7ba0e4fd",
+      "content": "ENVIRONMENTAL DATA: 13, MURSHIDABAD, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 48,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_NADIA_14_d4ef10ae",
+      "content": "ENVIRONMENTAL DATA: 14, NADIA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 42,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_NORTH 24 PARGANAS_15_4d364abe",
+      "content": "ENVIRONMENTAL DATA: 15, NORTH 24 PARGANAS, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 54,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_PASCHIM MEDINIPUR_16_772182d6",
+      "content": "ENVIRONMENTAL DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 54,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_PURBA MEDINIPUR_17_e610c9e9",
+      "content": "ENVIRONMENTAL DATA: 17, PURBA MEDINIPUR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 52,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_PURULIYA_18_29e56ebf",
+      "content": "ENVIRONMENTAL DATA: 18, PURULIYA, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 45,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_SOUTH 24 PARGANAS_19_ed32349c",
+      "content": "ENVIRONMENTAL DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 54,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_WEST BENGAL_UTTAR DINAJPUR_20_5c15bb32",
+      "content": "ENVIRONMENTAL DATA: 20, UTTAR DINAJPUR, WEST BENGAL",
+      "parameter_group": "environmental",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 51,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_environmental_nan_nan_Total_b8b4a9be",
+      "content": "ENVIRONMENTAL DATA: Total, nan, nan",
+      "parameter_group": "environmental",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 35,
+      "parameter_count": 8
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_ALIPURDUAR_1_8a8a59ef",
+      "content": "QUALITY PARAMETERS DATA: 1, ALIPURDUAR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-ALIPURDUAR-1",
+      "chunk_size": 51,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_BANKURA_2_d5a23a98",
+      "content": "QUALITY PARAMETERS DATA: 2, BANKURA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-BANKURA-2",
+      "chunk_size": 48,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_BARDDHAMAN_3_bf46a871",
+      "content": "QUALITY PARAMETERS DATA: 3, BARDDHAMAN, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-BARDDHAMAN-3",
+      "chunk_size": 51,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_BIRBHUM_4_e37cfa71",
+      "content": "QUALITY PARAMETERS DATA: 4, BIRBHUM, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-BIRBHUM-4",
+      "chunk_size": 48,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_DAKSHIN DINAJPUR_5_95c342ce",
+      "content": "QUALITY PARAMETERS DATA: 5, DAKSHIN DINAJPUR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-DAKSHIN DINAJPUR-5",
+      "chunk_size": 57,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_DARJILING_6_1c9d6775",
+      "content": "QUALITY PARAMETERS DATA: 6, DARJILING, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-DARJILING-6",
+      "chunk_size": 50,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_HAORA_7_4bb5a004",
+      "content": "QUALITY PARAMETERS DATA: 7, HAORA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-HAORA-7",
+      "chunk_size": 46,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_HUGLI_8_491551e7",
+      "content": "QUALITY PARAMETERS DATA: 8, HUGLI, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-HUGLI-8",
+      "chunk_size": 46,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_JALPAIGURI_9_de4e0b1a",
+      "content": "QUALITY PARAMETERS DATA: 9, JALPAIGURI, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-JALPAIGURI-9",
+      "chunk_size": 51,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_KOCH BIHAR_10_03b829e6",
+      "content": "QUALITY PARAMETERS DATA: 10, KOCH BIHAR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-KOCH BIHAR-10",
+      "chunk_size": 52,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_KOLKATA_11_e18b86a8",
+      "content": "QUALITY PARAMETERS DATA: 11, KOLKATA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-KOLKATA-11",
+      "chunk_size": 49,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_MALDA_12_e55d1d82",
+      "content": "QUALITY PARAMETERS DATA: 12, MALDA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-MALDA-12",
+      "chunk_size": 47,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_MURSHIDABAD_13_fe554a3c",
+      "content": "QUALITY PARAMETERS DATA: 13, MURSHIDABAD, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-MURSHIDABAD-13",
+      "chunk_size": 53,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_NADIA_14_8973fb92",
+      "content": "QUALITY PARAMETERS DATA: 14, NADIA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-NADIA-14",
+      "chunk_size": 47,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_NORTH 24 PARGANAS_15_47db5f47",
+      "content": "QUALITY PARAMETERS DATA: 15, NORTH 24 PARGANAS, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-NORTH 24 PARGANAS-15",
+      "chunk_size": 59,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_PASCHIM MEDINIPUR_16_ded95756",
+      "content": "QUALITY PARAMETERS DATA: 16, PASCHIM MEDINIPUR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-PASCHIM MEDINIPUR-16",
+      "chunk_size": 59,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_PURBA MEDINIPUR_17_90c84733",
+      "content": "QUALITY PARAMETERS DATA: 17, PURBA MEDINIPUR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-PURBA MEDINIPUR-17",
+      "chunk_size": 57,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_PURULIYA_18_cb42c992",
+      "content": "QUALITY PARAMETERS DATA: 18, PURULIYA, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-PURULIYA-18",
+      "chunk_size": 50,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_SOUTH 24 PARGANAS_19_f443fc5d",
+      "content": "QUALITY PARAMETERS DATA: 19, SOUTH 24 PARGANAS, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-SOUTH 24 PARGANAS-19",
+      "chunk_size": 59,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_WEST BENGAL_UTTAR DINAJPUR_20_e9e22fd5",
+      "content": "QUALITY PARAMETERS DATA: 20, UTTAR DINAJPUR, WEST BENGAL",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "WEST BENGAL-UTTAR DINAJPUR-20",
+      "chunk_size": 56,
+      "parameter_count": 6
+    },
+    {
+      "chunk_id": "PARAM_quality_parameters_nan_nan_Total_a69a01f7",
+      "content": "QUALITY PARAMETERS DATA: Total, nan, nan",
+      "parameter_group": "quality_parameters",
+      "administrative_unit": "nan-nan-Total",
+      "chunk_size": 40,
+      "parameter_count": 6
+    }
+  ],
+  "quality_chunks": [
+    {
+      "chunk_id": "QUALITY_HIGH_b89de3b4",
+      "content": "DATA QUALITY ASSESSMENT: HIGH CONFIDENCE LEVEL\n\nUnits in this category: 21\nAverage data completeness: 100.00%\n\nStates covered: WEST BENGAL, nan\n\nRecommended usage:\n- Primary decision making\n- Policy formulation\n- Detailed analysis",
+      "quality_level": "HIGH",
+      "unit_count": 21,
+      "chunk_size": 230
+    }
+  ],
+  "total_chunks": 192,
+  "processing_summary": {
+    "total_units": 21,
+    "columns_available": 156,
+    "chunk_types": [
+      "hierarchical",
+      "parameter_based",
+      "quality_aware"
+    ]
+  }
+}

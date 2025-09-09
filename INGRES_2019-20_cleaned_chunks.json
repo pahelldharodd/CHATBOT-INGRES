@@ -1,0 +1,21 @@
+{
+  "hierarchical_chunks": [],
+  "parameter_chunks": [],
+  "quality_chunks": [
+    {
+      "chunk_id": "QUALITY_HIGH_b89de3b4",
+      "content": "\n        DATA QUALITY ASSESSMENT: HIGH CONFIDENCE LEVEL\n        \n        Units in this category: 722\n        Average data completeness: 100.00%\n        \n        States covered: ANDAMAN AND NICOBAR ISLANDS, ANDHRA PRADESH, ARUNACHAL PRADESH, ASSAM, BIHAR, CHANDIGARH, CHHATTISGARH, DADRA AND NAGAR HAVELI, DAMAN AND DIU, DELHI, GOA, GUJARAT, HARYANA, HIMACHAL PRADESH, JAMMU AND KASHMIR, JHARKHAND, KARNATAKA, KERALA, LADAKH, LAKSHDWEEP, MADHYA PRADESH, MAHARASHTRA, MANIPUR, MEGHALAYA, MIZORAM, NAGALAND, ODISHA, PUDUCHERRY, PUNJAB, RAJASTHAN, SIKKIM, TAMILNADU, TELANGANA, TRIPURA, UTTAR PRADESH, UTTARAKHAND, WEST BENGAL, nan\n        \n        Recommended usage:\n        - Primary decision making\n        - Policy formulation\n        - Detailed analysis",
+      "quality_level": "HIGH",
+      "unit_count": 722,
+      "chunk_size": 754
+    }
+  ],
+  "total_chunks": 1,
+  "processing_summary": {
+    "total_units": 722,
+    "columns_available": 156,
+    "chunk_types": [
+      "quality_aware"
+    ]
+  }
+}

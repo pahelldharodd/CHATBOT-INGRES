@@ -2,6 +2,8 @@ import gradio as gr
 from utils.upload_file import UploadFile
 from utils.chatbot import ChatBot
 from utils.ui_settings import UISettings
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 
 with gr.Blocks() as demo:
@@ -70,6 +72,23 @@ with gr.Blocks() as demo:
                                             queue=False).then(lambda: gr.Textbox(interactive=True),
                                                               None, [input_txt], queue=False)
 
+app = FastAPI()
+
+# Allow local dev frontend to access the backend-mounted Gradio app
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Mount Gradio UI at /gradio
+gr.mount_gradio_app(app, demo, path="/gradio")
 
 if __name__ == "__main__":
-    demo.launch()
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)

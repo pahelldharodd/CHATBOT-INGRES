@@ -1,0 +1,1590 @@
+{
+  "total_chunks": 373,
+  "chunk_types": {
+    "methodology": {
+      "count": 372,
+      "avg_size": 232.7231182795699
+    },
+    "formula": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "template": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "workflow": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "user_role": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "technical_spec": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "visual": {
+      "count": 0,
+      "avg_size": 0
+    },
+    "glossary": {
+      "count": 1,
+      "avg_size": 3935.0
+    },
+    "report": {
+      "count": 0,
+      "avg_size": 0
+    }
+  },
+  "size_distribution": {
+    "min": 14,
+    "max": 7870,
+    "avg": 242.64879356568363
+  },
+  "relationships_map": {
+    "METH_0001": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0002": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0003": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0004": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0005": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0006": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0007": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0008": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0009": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0010": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0011": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0012": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0013": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0014": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0015": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0016": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0017": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0018": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0019": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0020": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0021": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0022": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0023": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0024": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0025": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0026": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0027": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0028": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0029": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0030": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0031": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0032": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0033": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0034": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0035": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0036": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0037": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0038": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0039": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0040": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0041": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0042": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0043": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0044": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0045": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0046": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0047": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0048": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0049": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0050": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0051": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0052": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0053": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0054": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0055": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0056": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0057": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0058": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0059": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0060": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0061": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0062": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0063": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0064": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0065": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0066": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0067": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0068": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0069": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0070": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0071": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0072": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0073": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0074": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0075": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0076": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0077": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0078": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0079": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0080": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0081": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0082": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0083": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0084": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0085": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0086": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0087": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0088": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0089": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0090": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0091": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0092": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0093": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0094": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0095": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0096": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0097": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0098": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0099": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0100": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0101": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0102": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0103": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0104": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0105": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0106": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0107": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0108": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0109": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0110": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0111": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0112": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0113": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0114": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0115": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0116": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0117": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0118": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0119": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0120": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0121": {
+      "dependencies": [],
+      "related": []
+    },
+    "METH_0122": {
+      "dependencies": [],
+      "related": [
+        "GEN_0288",
+        "GEN_0287",
+        "GEN_0289",
+        "GEN_0291",
+        "GEN_0293",
+        "GEN_0285",
+        "GEN_0290",
+        "GEN_0286",
+        "GEN_0238",
+        "GEN_0296"
+      ]
+    },
+    "METH_0123": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0124": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0125": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0126": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0127": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0128": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0129": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0130": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0131": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0132": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0133": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0134": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0135": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0136": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0137": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0138": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0139": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0140": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0141": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0142": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0143": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0144": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0145": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0146": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0147": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0148": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0149": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0150": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0151": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0152": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0153": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0154": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0155": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0156": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0157": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0158": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0159": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0160": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0161": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0162": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0163": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0164": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0165": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0166": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0167": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0168": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0169": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0170": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0171": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0172": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0173": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0174": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0175": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0176": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0177": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0178": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0179": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0180": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0181": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0182": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0183": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0184": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0185": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0186": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0187": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0188": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0189": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0190": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0191": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0192": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0193": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0194": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0195": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0196": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0197": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0198": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0199": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0200": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0201": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0202": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0203": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0204": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0205": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0206": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0207": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0208": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0209": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0210": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0211": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0212": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0213": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0214": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0215": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0216": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0217": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0218": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0219": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0220": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0221": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0222": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0223": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0224": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0225": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0226": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0227": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0228": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0229": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0230": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0231": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0232": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0233": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0234": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0235": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0236": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0237": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0238": {
+      "dependencies": [],
+      "related": [
+        "GEN_0288",
+        "GEN_0287",
+        "GEN_0289",
+        "GEN_0293",
+        "METH_0122",
+        "GEN_0285",
+        "GEN_0290",
+        "GEN_0286",
+        "GEN_0291",
+        "GEN_0296"
+      ]
+    },
+    "GEN_0239": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0240": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0241": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0242": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0243": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0244": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0245": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0246": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0247": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0248": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0249": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0250": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0251": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0252": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0253": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0254": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0255": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0256": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0257": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0258": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0259": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0260": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0261": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0262": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0263": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0264": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0265": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0266": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0267": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0268": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0269": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0270": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0271": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0272": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0273": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0274": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0275": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0276": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0277": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0278": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0279": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0280": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0281": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0282": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0283": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0284": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0285": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0286": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0287": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0288": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0289": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0290": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0291": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0292": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0293": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0294": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0295": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0296": {
+      "dependencies": [],
+      "related": [
+        "GEN_0238",
+        "METH_0122"
+      ]
+    },
+    "GEN_0297": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0298": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0299": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0300": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0301": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0302": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0303": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0304": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0305": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0306": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0307": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0308": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0309": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0310": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0311": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0312": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0313": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0314": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0315": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0316": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0317": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0318": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0319": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0320": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0321": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0322": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0323": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0324": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0325": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0326": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0327": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0328": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0329": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0330": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0331": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0332": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0333": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0334": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0335": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0336": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0337": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0338": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0339": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0340": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0341": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0342": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0343": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0344": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0345": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0346": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0347": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0348": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0349": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0350": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0351": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0352": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0353": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0354": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0355": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0356": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0357": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0358": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0359": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0360": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0361": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0362": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0363": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0364": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0365": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0366": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0367": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0368": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0369": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0370": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0371": {
+      "dependencies": [],
+      "related": []
+    },
+    "GEN_0372": {
+      "dependencies": [],
+      "related": []
+    },
+    "GLOS_0373": {
+      "dependencies": [],
+      "related": []
+    }
+  },
+  "component_breakdown": {}
+}

@@ -1,4 +1,4 @@
-utils/pycache/
+utils/__pycache__/
 src/utils/__pycache__/
 # Ignore Python bytecode cache
 __pycache__/

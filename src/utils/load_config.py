@@ -29,11 +29,33 @@ class LoadConfig:
         self.uploaded_files_sqldb_directory = app_config.get("uploaded_files_sqldb_directory", "data/uploaded_sqldb")
         self.stored_csv_xlsx_sqldb_directory = app_config.get("stored_csv_xlsx_sqldb_directory", "data/csv_xlsx_sqldb.db")
 
+    def _resolve_model(self, requested: str | None) -> str:
+        """Normalize model names away from unstable aliases like -latest/-002.
+        Prefer stable IDs supported by google-generativeai.
+        """
+        if not requested or requested.strip() == "":
+            return "gemini-1.5-flash-8b"
+        name = requested.strip()
+        # Map '-latest' to base
+        if name.endswith("-latest"):
+            if "pro" in name:
+                return "gemini-1.5-pro"
+            # Default to 8b for flash to avoid internal -002 mapping
+            return "gemini-1.5-flash-8b"
+        # Map specific version suffixes like -002/-001 to base
+        if name.endswith("-002") or name.endswith("-001"):
+            if name.startswith("gemini-1.5-pro"):
+                return "gemini-1.5-pro"
+            if name.startswith("gemini-1.5-flash-8b") or name.startswith("gemini-1.5-flash"):
+                return "gemini-1.5-flash-8b"
+        return name
+
     def load_llm_configs(self, app_config):
-        # Only use the correct working Gemini model
-        self.model_name = "gemini-1.5-flash-8b"
+        # Prefer env override; normalize to stable model IDs
+        requested = os.getenv("GEMINI_MODEL_NAME")
+        self.model_name = self._resolve_model(requested)
         self.embedding_model_name = "models/text-embedding-004"
-        print(f"[Gemini] Using model: {self.model_name}")
+        print(f"[Gemini] Requested model: {requested!r} -> Using: {self.model_name}")
 
         self.agent_llm_system_role = app_config["llm_config"]["agent_llm_system_role"]
         self.rag_llm_system_role = app_config["llm_config"]["rag_llm_system_role"]

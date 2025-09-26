@@ -112,6 +112,24 @@ class ChatBot:
 
     @staticmethod
     def respond(chatbot: List, message: str, chat_type: str, app_functionality: str) -> Tuple:
+        # Use LLM to detect greetings/small talk and handle them gracefully
+        greeting_check_prompt = f"""
+        You are an intent classifier for a chatbot. Classify the following user message as either 'greeting', 'goodbye', 'thanks', or 'data_query'.
+        Only output one of: greeting, goodbye, thanks, data_query.
+        User message: {message}
+        """
+        intent_response = APPCFG.gemini_llm.generate_content(greeting_check_prompt)
+        intent = intent_response.text.strip().lower()
+        if intent == "greeting":
+            chatbot.append((message, "Hello! How can I help you with groundwater data or queries today?"))
+            return "", chatbot, None
+        elif intent == "goodbye":
+            chatbot.append((message, "Goodbye! If you have more questions, feel free to ask anytime."))
+            return "", chatbot, None
+        elif intent == "thanks":
+            chatbot.append((message, "You're welcome! Let me know if you need anything else."))
+            return "", chatbot, None
+        # ...existing code...
         if app_functionality == "Chat":
 
             # # 1. Q&A with stored SQL DB (.sql schema)

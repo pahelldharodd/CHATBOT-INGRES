@@ -37,13 +37,15 @@ const translations = {
 			critical: 'Critical',
 			overExploited: 'Over-Exploited',
 		},
-			dashboard: {
-				overview: {
-					safeRegions: 'Safe Regions',
-					criticalRegions: 'Critical Regions',
-					overExploited: 'Over-Exploited',
-				},
+		dashboard: {
+			overview: {
+				safeRegions: 'Safe Regions',
+				criticalRegions: 'Critical Regions',
+				overExploited: 'Over-Exploited',
 			},
+			summaryTitle: 'Latest Groundwater Summary',
+			summaryDesc: 'Summary of recent updates and metrics will appear here.',
+		},
 		search: {
 			region: 'Region',
 			year: 'Year',
@@ -114,13 +116,15 @@ const translations = {
 			critical: 'गंभीर',
 			overExploited: 'अतिदोहन',
 		},
-			dashboard: {
-				overview: {
-					safeRegions: 'सुरक्षित क्षेत्र',
-					criticalRegions: 'गंभीर क्षेत्र',
-					overExploited: 'अतिदोहन क्षेत्र',
-				},
+		dashboard: {
+			overview: {
+				safeRegions: 'सुरक्षित क्षेत्र',
+				criticalRegions: 'गंभीर क्षेत्र',
+				overExploited: 'अतिदोहन क्षेत्र',
 			},
+			summaryTitle: 'नवीनतम भूजल सारांश',
+			summaryDesc: 'हाल के अपडेट और मेट्रिक्स का सारांश यहाँ दिखाई देगा।',
+		},
 		search: {
 			region: 'क्षेत्र',
 			year: 'वर्ष',
@@ -170,7 +174,7 @@ export function I18nProvider({ children }) {
 	useEffect(() => {
 		try {
 			localStorage.setItem('locale', locale)
-		} catch { /* ignore localStorage errors */ }
+		} catch {}
 	}, [locale])
 	const value = useMemo(() => ({ locale, setLocale, t: translations[locale] }), [locale])
 	return (
@@ -183,4 +187,3 @@ export function I18nProvider({ children }) {
 export function useI18n() {
 	return useContext(I18nContext)
 }
- 

@@ -18,8 +18,8 @@ with gr.Blocks() as demo:
                     elem_id="chatbot",
                     bubble_full_width=False,
                     height=500,
-                    avatar_images=(
-                        ("images/AI_RT.png"), "images/openai.png")
+                    # avatar_images=(
+                    #     ("images/AI_RT.png"), "images/openai.png")
                 )
                 # **Adding like/dislike icons
                 chatbot.like(UISettings.feedback, None, None)

@@ -10,4 +10,6 @@ SQLAlchemy
 openai
 fastapi
 uvicorn
+google-generativeai>=0.7.0
+sentence-transformers>=2.5.0
 

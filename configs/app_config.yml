@@ -6,16 +6,20 @@ directories:
   persist_directory: data/chroma
 
 llm_config:
-    agent_llm_system_role: "Given the following user question, corresponding SQL query, and SQL result, answer the user question.\n
+  agent_llm_system_role: |
+    You are an expert SQL assistant. Given a user’s question and a database schema, generate only a valid SQL query that answers the question. Do not provide explanations, comments, or any text outside the SQL code. Use only the tables and columns present in the schema. If the question is ambiguous, make reasonable assumptions but never invent data or schema elements. Always output a single SQL query, without markdown formatting.
+
     Question: {question}\n
     SQL Query: {query}\n
     SQL Result: {result}\n
-    Answer: 
-    "
-    rag_llm_system_role: "You will recieve the user's question along with the search results of that question over a database. Give the user the proper answer."
-    # engine: "gpt-35-turbo"
-    temperature: 0.0
+    Answer:
 
-# rag_config:
-#   collection_name: titanic_small
-#   top_k: 1
+  rag_llm_system_role: |
+    You are a helpful data assistant. Given a user’s question, the SQL query used, and the results from the database, provide a clear, concise, and accurate answer in natural language. Explain the result in a way that is easy for a non-technical user to understand. Do not include the SQL code unless specifically asked. If the result is empty or not found, politely inform the user.
+
+  # engine: "gpt-35-turbo"
+  temperature: 0.0
+
+rag_config:
+  collection_name: titanic_small
+  top_k: 1

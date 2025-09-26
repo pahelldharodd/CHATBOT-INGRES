@@ -29,10 +29,33 @@ class LoadConfig:
         self.uploaded_files_sqldb_directory = app_config.get("uploaded_files_sqldb_directory", "data/uploaded_sqldb")
         self.stored_csv_xlsx_sqldb_directory = app_config.get("stored_csv_xlsx_sqldb_directory", "data/csv_xlsx_sqldb.db")
 
+    def _resolve_model(self, requested: str | None) -> str:
+        """Normalize model names away from unstable aliases like -latest/-002.
+        Prefer stable IDs supported by google-generativeai.
+        """
+        if not requested or requested.strip() == "":
+            return "gemini-1.5-flash-8b"
+        name = requested.strip()
+        # Map '-latest' to base
+        if name.endswith("-latest"):
+            if "pro" in name:
+                return "gemini-1.5-pro"
+            # Default to 8b for flash to avoid internal -002 mapping
+            return "gemini-1.5-flash-8b"
+        # Map specific version suffixes like -002/-001 to base
+        if name.endswith("-002") or name.endswith("-001"):
+            if name.startswith("gemini-1.5-pro"):
+                return "gemini-1.5-pro"
+            if name.startswith("gemini-1.5-flash-8b") or name.startswith("gemini-1.5-flash"):
+                return "gemini-1.5-flash-8b"
+        return name
+
     def load_llm_configs(self, app_config):
-        # Load model + config from YAML + environment
-        self.model_name = os.getenv("GEMINI_MODEL_NAME", "gemini-1.5-flash")  # default to flash
-        self.embedding_model_name = os.getenv("GEMINI_EMBED_MODEL", "models/embedding-001")
+        # Prefer env override; normalize to stable model IDs
+        requested = os.getenv("GEMINI_MODEL_NAME")
+        self.model_name = self._resolve_model(requested)
+        self.embedding_model_name = "models/text-embedding-004"
+        print(f"[Gemini] Requested model: {requested!r} -> Using: {self.model_name}")
 
         self.agent_llm_system_role = app_config["llm_config"]["agent_llm_system_role"]
         self.rag_llm_system_role = app_config["llm_config"]["rag_llm_system_role"]
@@ -45,12 +68,19 @@ class LoadConfig:
 
         # Configure Gemini client
         genai.configure(api_key=api_key)
+        print(f"[Gemini] google-generativeai SDK version: {getattr(genai, '__version__', 'unknown')}")
 
-        # Chat/completion model
+        # Only use the correct model
         self.gemini_llm = genai.GenerativeModel(self.model_name)
-
-        # Embedding model
         self.gemini_embed = genai
+
+    def generate_content_with_fallback(self, prompt: str, extra_models: list | None = None):
+        """
+        Generate content using only the configured Gemini model (no fallbacks).
+        """
+        print(f"[Gemini] generate with model: {self.model_name}")
+        model = genai.GenerativeModel(self.model_name)
+        return model.generate_content(prompt)
 
     def load_chroma_client(self):
         self.chroma_client = chromadb.PersistentClient(

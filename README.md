@@ -80,3 +80,19 @@ Contributions are welcome!
 ## 📜 License
 This project is intended for research and educational purposes.  
 Final deployment will follow policies and guidelines from **MoJS, CGWB, and IIT Hyderabad**.  
+
+---
+
+## Canonical header names (LLM-friendly, no synonyms)
+
+To make SQL generation more robust, we derive deterministic, human-readable column names from the original headers and expose them as SQLite views.
+
+- Generator: `src/utils/generate_canonical_header_map.py`
+- Output map: `header_flat_csv/INGRES_header_canonical_map.json`
+- Convention:
+	- Join original header parts (split by `|`) as snake_case
+	- Append dimension suffix: `_c`, `_nc`, `_pq`, `_total`
+	- Append unit suffix: `_mm`, `_ha_m`, `_percent`
+- At runtime, the chatbot creates `v_<table>` views where columns are aliased to the canonical names, and prompts the LLM to prefer these views.
+
+If you update the original header map, re-run the generator to refresh the canonical map.

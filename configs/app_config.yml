@@ -16,6 +16,6 @@ llm_config:
     # engine: "gpt-35-turbo"
     temperature: 0.0
 
-# rag_config:
-#   collection_name: titanic_small
-#   top_k: 1
+rag_config:
+  collection_name: titanic_small
+  top_k: 1

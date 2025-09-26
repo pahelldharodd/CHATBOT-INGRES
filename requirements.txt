@@ -10,4 +10,5 @@ SQLAlchemy
 openai
 fastapi
 uvicorn
+google-generativeai>=0.7.0
 

@@ -1,6 +1,5 @@
 import OverviewCard from '../components/dashboard/OverviewCard'
 import DataSummary from '../components/dashboard/DataSummary'
-import GroundwaterStatus from '../components/visualization/GroundwaterStatus'
 import GroundwaterMap from '../components/visualization/GroundwaterMap'
 import { useI18n } from '../i18n/I18nContext'
 
@@ -14,7 +13,6 @@ export default function DashboardPage() {
 				<OverviewCard title={t.dashboard.overview.overExploited} value="--" tone="red" />
 			</div>
 			<DataSummary />
-			<GroundwaterStatus />
 			<GroundwaterMap />
 		</div>
 	)

@@ -1,0 +1,9 @@
+Source,Command,Non Command,Total
+Baseflow,"1850.32",0,"1850.32"
+Evapo-Transpiration,0,257.69,257.69
+Evaporation,0,"4840.09","4840.09"
+Lateral Flows,0,0,0
+Stream Recharges,0,0,0
+Transpiration,0,"388533.87","388533.87"
+Vertical Flows,0,0,0
+Total,"1802190.90","1888212.39","3690402.85"

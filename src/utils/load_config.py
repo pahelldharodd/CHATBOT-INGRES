@@ -34,20 +34,24 @@ class LoadConfig:
         Prefer stable IDs supported by google-generativeai.
         """
         if not requested or requested.strip() == "":
-            return "gemini-1.5-flash-8b"
+            return "gemini-2.5-flash"
         name = requested.strip()
         # Map '-latest' to base
         if name.endswith("-latest"):
             if "pro" in name:
-                return "gemini-1.5-pro"
-            # Default to 8b for flash to avoid internal -002 mapping
-            return "gemini-1.5-flash-8b"
+                return "gemini-2.5-pro"
+            return "gemini-2.5-flash"
         # Map specific version suffixes like -002/-001 to base
         if name.endswith("-002") or name.endswith("-001"):
-            if name.startswith("gemini-1.5-pro"):
-                return "gemini-1.5-pro"
-            if name.startswith("gemini-1.5-flash-8b") or name.startswith("gemini-1.5-flash"):
-                return "gemini-1.5-flash-8b"
+            if name.startswith("gemini-2.5-pro"):
+                return "gemini-2.5-pro"
+            if name.startswith("gemini-2.5-flash") or name.startswith("gemini-2.0-flash"):
+                return "gemini-2.5-flash"
+        # Handle legacy model names
+        if "gemini-1.5-flash-8b" in name or "gemini-2.5-flash-8b" in name:
+            return "gemini-2.5-flash"
+        if "gemini-1.5-flash" in name:
+            return "gemini-2.5-flash"
         return name
 
     def load_llm_configs(self, app_config):

@@ -160,21 +160,26 @@ def answer_with_rag(collection: chromadb.Collection, question: str, top_k: int =
 
     # Build prompt and get answer from Gemini
     prompt = build_prompt(context_blocks, question)
-    requested = os.getenv("GEMINI_MODEL_NAME", "gemini-1.5-flash-8b")
+    requested = os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash")
     # Normalize unstable aliases
     def _resolve_model(name: str) -> str:
         n = (name or "").strip()
         if not n:
-            return "gemini-1.5-flash-8b"
+            return "gemini-2.5-flash"
         if n.endswith("-latest"):
             if "pro" in n:
-                return "gemini-1.5-pro"
-            return "gemini-1.5-flash-8b"
+                return "gemini-2.5-pro"
+            return "gemini-2.5-flash"
         if n.endswith("-002") or n.endswith("-001"):
-            if n.startswith("gemini-1.5-pro"):
-                return "gemini-1.5-pro"
-            if n.startswith("gemini-1.5-flash-8b") or n.startswith("gemini-1.5-flash"):
-                return "gemini-1.5-flash-8b"
+            if n.startswith("gemini-2.5-pro"):
+                return "gemini-2.5-pro"
+            if n.startswith("gemini-2.5-flash") or n.startswith("gemini-2.0-flash"):
+                return "gemini-2.5-flash"
+        # Handle legacy model names
+        if "gemini-1.5-flash-8b" in n or "gemini-2.5-flash-8b" in n:
+            return "gemini-2.5-flash"
+        if "gemini-1.5-flash" in n:
+            return "gemini-2.5-flash"
         return n
     model_name = _resolve_model(requested)
     llm = genai.GenerativeModel(model_name)
@@ -211,7 +216,7 @@ load_dotenv()
 historical_app = FastAPI(title="Historical PDF RAG Service")
 
 # Configure Gemini with the HISTORICAL_API_KEY (separate from main app)
-genai.configure(api_key=_get_env("HISTORICAL_API_KEY"))
+genai.configure(api_key=_get_env("GEMINI_API_KEY"))
 
 # CORS to allow Vite dev origin
 historical_app.add_middleware(
@@ -277,7 +282,7 @@ def historical_debug() -> Dict[str, Any]:
                 stored_dim = len(first_vec)
         info["stored_embedding_dim"] = stored_dim
         info["embedding_model"] = "models/text-embedding-004"
-        info["llm_model"] = os.getenv("GEMINI_MODEL_NAME", "gemini-1.5-flash-8b")
+        info["llm_model"] = os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash")
     except Exception as e:
         print(f"[historical_debug] Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))

@@ -2,18 +2,17 @@
 // import QuickReplies from '../components/chatbot/QuickReplies'
 
 export default function ChatbotPage() {
-	return (
-		<div className="mx-auto max-w-5xl px-4 py-8 grid gap-6">
-			{/* <ChatWindow />
+  return (
+    <div className="w-full min-h-screen bg-[#030714] pt-16">
+      {/* <ChatWindow />
 			<QuickReplies /> */}
-            <div className="w-full" style={{ height: '85vh' }}>
-                <iframe
-                    title="Gradio Chatbot"
-                    src="/gradio"
-                    className="w-full h-full border rounded"
-                    allow="clipboard-read; clipboard-write;"
-                />
-            </div>
-		</div>
-	)
+      <iframe
+        title="Gradio Chatbot"
+        src="/gradio"
+        className="w-full h-[calc(100vh-4rem)] border-none"
+        allow="clipboard-read; clipboard-write;"
+        scrolling="yes"
+      />
+    </div>
+  );
 }

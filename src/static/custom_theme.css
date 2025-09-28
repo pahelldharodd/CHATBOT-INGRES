@@ -1,0 +1,289 @@
+/* Futuristic Glassmorphism Theme for Gradio */
+:root {
+    --primary-bg: #030714;
+    --glass-bg: rgba(15, 23, 42, 0.3);
+    --glass-border: rgba(6, 182, 212, 0.2);
+    --glass-hover: rgba(6, 182, 212, 0.1);
+    --cyan-primary: #06b6d4;
+    --cyan-secondary: #0891b2;
+    --teal-primary: #14b8a6;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-accent: #67e8f9;
+}
+
+/* Main container styling */
+.gradio-container {
+    background: linear-gradient(135deg, #030714 0%, #0f172a 50%, #1e293b 100%) !important;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Add animated background gradients */
+.gradio-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(29, 78, 216, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(13, 148, 136, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(30, 64, 175, 0.3) 0%, transparent 50%);
+    animation: pulse 4s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Ensure content is above background */
+.gradio-container>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tab styling */
+.tab-nav {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.tab-nav button {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 1px solid transparent !important;
+    border-radius: 0.75rem !important;
+    padding: 1rem 2rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.tab-nav button:hover {
+    background: var(--glass-hover) !important;
+    border-color: var(--glass-border) !important;
+    color: var(--text-accent) !important;
+}
+
+.tab-nav button.selected {
+    background: rgba(6, 182, 212, 0.2) !important;
+    border-color: var(--cyan-primary) !important;
+    color: var(--text-accent) !important;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3) !important;
+}
+
+/* Chatbot container */
+.chatbot {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Chat messages */
+.message {
+    background: rgba(15, 23, 42, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(6, 182, 212, 0.1) !important;
+    border-radius: 1rem !important;
+    margin: 0.5rem 0 !important;
+    padding: 1rem !important;
+    color: var(--text-primary) !important;
+}
+
+.message.user {
+    background: rgba(6, 182, 212, 0.1) !important;
+    border-color: rgba(6, 182, 212, 0.3) !important;
+    margin-left: 2rem !important;
+}
+
+.message.bot {
+    background: rgba(20, 184, 166, 0.1) !important;
+    border-color: rgba(20, 184, 166, 0.3) !important;
+    margin-right: 2rem !important;
+}
+
+/* Input textbox */
+.textbox_container {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.textbox_container:focus-within {
+    border-color: var(--cyan-primary) !important;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3) !important;
+}
+
+.textbox_container textarea {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: none !important;
+    font-size: 1rem !important;
+}
+
+.textbox_container textarea::placeholder {
+    color: var(--text-secondary) !important;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(135deg, var(--cyan-primary), var(--teal-primary)) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4) !important;
+}
+
+.btn.secondary {
+    background: rgba(71, 85, 105, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+.btn.secondary:hover {
+    background: rgba(71, 85, 105, 0.7) !important;
+    box-shadow: 0 8px 25px rgba(71, 85, 105, 0.4) !important;
+}
+
+/* Dropdown styling */
+.dropdown {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 0.75rem !important;
+    color: var(--text-primary) !important;
+}
+
+.dropdown:hover {
+    border-color: var(--cyan-primary) !important;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.2) !important;
+}
+
+.dropdown option {
+    background: rgba(15, 23, 42, 0.9) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Upload button */
+.upload-button {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(79, 70, 229, 0.8)) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    border-radius: 0.75rem !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.upload-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Clear button */
+.clear-button {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.8), rgba(220, 38, 38, 0.8)) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    border-radius: 0.75rem !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.clear-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4) !important;
+}
+
+/* Row containers */
+.row {
+    gap: 1rem !important;
+    margin: 1rem 0 !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--cyan-primary), var(--teal-primary));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--cyan-secondary), var(--teal-primary));
+}
+
+/* Loading animation */
+.loading {
+    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+    animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Like/dislike buttons */
+.feedback-buttons {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(39%) saturate(5839%) hue-rotate(159deg) brightness(94%) contrast(87%);
+}
+
+.feedback-buttons:hover {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4796%) hue-rotate(159deg) brightness(106%) contrast(89%);
+}

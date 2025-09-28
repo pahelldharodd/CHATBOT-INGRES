@@ -120,15 +120,22 @@ class ChatBot:
         """
         intent_response = APPCFG.gemini_llm.generate_content(greeting_check_prompt)
         intent = intent_response.text.strip().lower()
+        
         if intent == "greeting":
-            chatbot.append((message, "Hello! How can I help you with groundwater data or queries today?"))
-            return "", chatbot, None
+            response = "Hello! How can I help you with groundwater data or queries today?"
+            chatbot.append({"role": "user", "content": message})
+            chatbot.append({"role": "assistant", "content": response})
+            return "", chatbot
         elif intent == "goodbye":
-            chatbot.append((message, "Goodbye! If you have more questions, feel free to ask anytime."))
-            return "", chatbot, None
+            response = "Goodbye! If you have more questions, feel free to ask anytime."
+            chatbot.append({"role": "user", "content": message})
+            chatbot.append({"role": "assistant", "content": response})
+            return "", chatbot
         elif intent == "thanks":
-            chatbot.append((message, "You're welcome! Let me know if you need anything else."))
-            return "", chatbot, None
+            response = "You're welcome! Let me know if you need anything else."
+            chatbot.append({"role": "user", "content": message})
+            chatbot.append({"role": "assistant", "content": response})
+            return "", chatbot
         # ...existing code...
         if app_functionality == "Chat":
 
@@ -170,22 +177,26 @@ class ChatBot:
             #         return "", chatbot, None
 
             # 2. Q&A with Uploaded/Stored CSV/XLSX → SQL DB
-            if chat_type in ["Q&A with Uploaded CSV/XLSX SQL-DB", "Q&A with stored CSV/XLSX SQL-DB"]:
+            if chat_type in ["📊 Database Query Assistant - INGRES SQL Data", "Q&A with Uploaded CSV/XLSX SQL-DB", "Q&A with stored CSV/XLSX SQL-DB"]:
                 if chat_type == "Q&A with Uploaded CSV/XLSX SQL-DB":
                     if os.path.exists(APPCFG.uploaded_files_sqldb_directory):
                         engine = create_engine(f"sqlite:///{APPCFG.uploaded_files_sqldb_directory}")
                         db = SQLDatabase(engine=engine)
                     else:
-                        chatbot.append((message, "Uploaded SQL DB not found. Please upload CSV/XLSX first."))
-                        return "", chatbot, None
+                        error_msg = "Uploaded SQL DB not found. Please upload CSV/XLSX first."
+                        chatbot.append({"role": "user", "content": message})
+                        chatbot.append({"role": "assistant", "content": error_msg})
+                        return "", chatbot
 
-                elif chat_type == "Q&A with stored CSV/XLSX SQL-DB":
+                elif chat_type in ["📊 Database Query Assistant - INGRES SQL Data", "Q&A with stored CSV/XLSX SQL-DB"]:
                     if os.path.exists(APPCFG.stored_csv_xlsx_sqldb_directory):
                         engine = create_engine(f"sqlite:///{APPCFG.stored_csv_xlsx_sqldb_directory}")
                         db = SQLDatabase(engine=engine)
                     else:
-                        chatbot.append((message, "Stored SQL DB not found. Please run `prepare_csv_xlsx_sqlitedb.py`."))
-                        return "", chatbot, None
+                        error_msg = "Stored SQL DB not found. Please run `prepare_csv_xlsx_sqlitedb.py`."
+                        chatbot.append({"role": "user", "content": message})
+                        chatbot.append({"role": "assistant", "content": error_msg})
+                        return "", chatbot
 
                 # Ensure canonical views exist for this DB (uses header_flat_csv/INGRES_header_canonical_map.json)
                 try:
@@ -299,8 +310,10 @@ class ChatBot:
                         else:
                             raise e
                     except Exception:
-                        chatbot.append((message, f"Error running SQL: {e}"))
-                        return "", chatbot, None
+                        error_msg = f"Error running SQL: {e}"
+                        chatbot.append({"role": "user", "content": message})
+                        chatbot.append({"role": "assistant", "content": error_msg})
+                        return "", chatbot
 
                 answer_prompt = f"""
                 User question: {message}
@@ -336,8 +349,27 @@ class ChatBot:
             #     )
             #     response = llm_response.text
 
+            # 3. Knowledge Assistant for CGWB Reports & Terms
+            elif chat_type == "📚 Knowledge Assistant - CGWB Reports & Terms":
+                # Simple knowledge-based responses for now
+                knowledge_prompt = f"""
+                You are a knowledgeable assistant specializing in CGWB (Central Ground Water Board) reports and groundwater technical terms.
+                
+                User question: {message}
+                
+                Please provide a comprehensive answer about groundwater terminology, CGWB assessment procedures, hydrogeological concepts, or related technical information.
+                Focus on being educational and informative while maintaining accuracy.
+                """
+                knowledge_response = APPCFG.generate_content_with_fallback(knowledge_prompt)
+                response = knowledge_response.text
+            
+            else:
+                # Fallback for unknown chat types
+                response = "I'm sorry, I don't understand that mode. Please select either 'Database Query Assistant' or 'Knowledge Assistant' from the settings."
+
             # Append response
-            chatbot.append((message, response))
+            chatbot.append({"role": "user", "content": message})
+            chatbot.append({"role": "assistant", "content": response})
             return "", chatbot
 
         else:

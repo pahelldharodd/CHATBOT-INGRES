@@ -2,9 +2,26 @@ utils/__pycache__/
 src/utils/__pycache__/
 # Ignore Python bytecode cache
 __pycache__/
-# Logs
-logs
-*.log
+__pycache__
+
+# Environment files
+.env
+.env.*
+!.env.example
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.ENV/
+
+# Environment variables
+*.env
+.env.local
+.env.development
+.env.production
+.env.test
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -31,3 +48,5 @@ __pycache__/
 *.pyc
 \__pycache__/
 __pycache__
+.env
+env

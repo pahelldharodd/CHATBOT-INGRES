@@ -4,6 +4,7 @@ import ChatbotPage from './pages/ChatbotPage'
 import DashboardPage from './pages/DashboardPage'
 import SearchPage from './pages/SearchPage'
 import HistoricalDataPage from './pages/HistoricalDataPage'
+import PredictionPage from './pages/PredictionPage'
 import HelpPage from './pages/HelpPage'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
@@ -20,6 +21,7 @@ function App() {
 						<Route path="/dashboard" element={<DashboardPage />} />
 						<Route path="/search" element={<SearchPage />} />
 						<Route path="/historical" element={<HistoricalDataPage />} />
+						<Route path="/prediction" element={<PredictionPage />} />
 						<Route path="/help" element={<HelpPage />} />
 					</Routes>
 				</main>

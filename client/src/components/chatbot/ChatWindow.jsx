@@ -16,7 +16,7 @@ export default function ChatWindow() {
 
 	return (
 		<div className="border border-white/10 rounded-lg bg-slate-900">
-			<div className="h-80 overflow-y-auto p-4 space-y-3">
+			<div className="h-80 overflow-y-auto p-4 space-y-3 glass-scrollbar">
 				{messages.map((m) => (
 					<MessageBox key={m.id} role={m.role} text={m.text} />
 				))}

@@ -39,14 +39,23 @@ export default function SearchResults({ rows = [], loading = false, errors = [],
 
 	return (
 		<div>
-			{loading && <div className="text-sm text-slate-400">Loading state/year data (2012-2024)…</div>}
+			{loading && (
+				<div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10 mb-4">
+					<div className="flex items-center gap-3">
+						<div className="w-5 h-5 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+						<span className="text-sm text-slate-200">Loading state/year data (2012-2024)…</span>
+					</div>
+				</div>
+			)}
 			{!loading && errors.length > 0 && (
-				<div className="text-xs text-amber-300 mb-2">Note: missing files for some years: {errors.join(', ')}</div>
+				<div className="bg-amber-900/20 backdrop-blur-sm rounded-xl p-3 border border-amber-500/20 mb-4">
+					<div className="text-xs text-amber-300">Note: missing files for some years: {errors.join(', ')}</div>
+				</div>
 			)}
 
-			<div className="rounded-lg border border-white/10 bg-slate-900 overflow-x-auto">
+			<div className="rounded-2xl border border-cyan-500/20 bg-slate-900/40 backdrop-blur-xl shadow-lg overflow-hidden">
 				<table className="min-w-full text-sm text-slate-200">
-							<thead className="bg-slate-800 text-slate-200">
+							<thead className="bg-slate-800/40 backdrop-blur-sm text-slate-200 border-b border-cyan-500/20">
 								<tr>
 									{/* show district column when rows include district */}
 									{rows.some(r => r.district) && <th className="px-4 py-2 text-left">District</th>}

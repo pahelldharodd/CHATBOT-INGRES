@@ -492,12 +492,12 @@ export default function GroundwaterMap({ mapId = 'map1', stageData = [], ingresD
 	}
 
 	return (
-		<div className="relative h-80 md:h-96 lg:h-[450px] rounded-lg border border-white/10 bg-slate-900 overflow-hidden">
+		<div className="relative h-80 md:h-96 lg:h-[450px] rounded-2xl border border-cyan-500/20 bg-slate-900/40 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
 			{geoJsonError && (
-				<div className="absolute left-3 top-3 z-20 text-xs text-amber-300 bg-slate-900/60 px-2 py-1 rounded">{geoJsonError}</div>
+				<div className="absolute left-3 top-3 z-20 text-xs text-amber-300 bg-slate-900/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-amber-500/20">{geoJsonError}</div>
 			)}
 			{ingresLoading && mapId !== 'map1' && (
-				<div className="absolute left-3 bottom-3 z-20 text-xs text-blue-300 bg-slate-900/60 px-2 py-1 rounded">Loading INGRES data...</div>
+				<div className="absolute left-3 bottom-3 z-20 text-xs text-cyan-300 bg-slate-900/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-cyan-500/20">Loading INGRES data...</div>
 			)}
 			<MapContainer
 				className="h-full w-full"

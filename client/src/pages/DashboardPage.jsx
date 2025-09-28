@@ -30,18 +30,18 @@ function Modal({ open, onClose, title, children }) {
             open
               ? "opacity-100 scale-100 translate-y-0"
               : "opacity-0 scale-95 translate-y-2"
-          } w-full max-w-3xl rounded-2xl border border-cyan-500/30 bg-slate-900/80 backdrop-blur-2xl shadow-2xl shadow-cyan-500/10 transition-all duration-300`}
+          } w-full max-w-5xl max-h-[85vh] rounded-2xl border border-cyan-500/30 bg-slate-900/80 backdrop-blur-2xl shadow-2xl shadow-cyan-500/10 transition-all duration-300 flex flex-col`}
         >
-          <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-            <h3 className="text-lg font-semibold text-slate-100">{title}</h3>
+          <div className="flex items-center justify-between px-6 py-5 border-b border-cyan-500/20 flex-shrink-0">
+            <h3 className="text-xl font-bold text-slate-100 text-glow">{title}</h3>
             <button
               onClick={onClose}
-              className="rounded-md px-2 py-1 text-slate-300 hover:text-white hover:bg-white/10 transition"
+              className="rounded-xl px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-700/60 backdrop-blur-sm border border-transparent hover:border-cyan-500/30 transition-all duration-300 text-lg font-bold"
             >
               ✕
             </button>
           </div>
-          <div className="p-5">{children}</div>
+          <div className="p-5 overflow-y-auto flex-1 glass-scrollbar">{children}</div>
         </div>
       </div>
     </div>
@@ -500,40 +500,43 @@ export default function DashboardPage() {
           })()}
           {/* Legend for Map1 (OVRL categories) */}
           {selectedMap === "map1" && (
-            <div className="mt-3 grid grid-cols-4 gap-2">
-              <div className="flex items-center gap-2">
-                <span
-                  className="w-4 h-4 rounded-full"
-                  style={{ backgroundColor: "#10b981" }}
-                ></span>
-                <span className="text-sm text-slate-200">Safe (&lt;70%)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span
-                  className="w-4 h-4 rounded-full"
-                  style={{ backgroundColor: "#f59e0b" }}
-                ></span>
-                <span className="text-sm text-slate-200">
-                  Semi-Critical (70-90%)
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span
-                  className="w-4 h-4 rounded-full"
-                  style={{ backgroundColor: "#f97316" }}
-                ></span>
-                <span className="text-sm text-slate-200">
-                  Critical (90-100%)
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span
-                  className="w-4 h-4 rounded-full"
-                  style={{ backgroundColor: "#ef4444" }}
-                ></span>
-                <span className="text-sm text-slate-200">
-                  Over-Exploited (≥100%)
-                </span>
+            <div className="mt-4 bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10">
+              <p className="text-sm font-semibold text-slate-100 mb-3">Map Legend</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                  <span
+                    className="w-4 h-4 rounded-full shadow-lg shadow-emerald-500/30"
+                    style={{ backgroundColor: "#10b981" }}
+                  ></span>
+                  <span className="text-sm text-slate-200 font-medium">Safe (&lt;70%)</span>
+                </div>
+                <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                  <span
+                    className="w-4 h-4 rounded-full shadow-lg shadow-amber-500/30"
+                    style={{ backgroundColor: "#f59e0b" }}
+                  ></span>
+                  <span className="text-sm text-slate-200 font-medium">
+                    Semi-Critical (70-90%)
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                  <span
+                    className="w-4 h-4 rounded-full shadow-lg shadow-orange-500/30"
+                    style={{ backgroundColor: "#f97316" }}
+                  ></span>
+                  <span className="text-sm text-slate-200 font-medium">
+                    Critical (90-100%)
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                  <span
+                    className="w-4 h-4 rounded-full shadow-lg shadow-red-500/30"
+                    style={{ backgroundColor: "#ef4444" }}
+                  ></span>
+                  <span className="text-sm text-slate-200 font-medium">
+                    Over-Exploited (≥100%)
+                  </span>
+                </div>
               </div>
             </div>
           )}
@@ -547,17 +550,17 @@ export default function DashboardPage() {
         title="Stage of Extraction Data (OVRL) - 2024-25"
       >
         <div className="grid gap-6">
-          <div>
-            <p className="text-sm text-slate-300">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10">
+            <p className="text-sm text-slate-200 leading-relaxed">
               This dataset shows the Stage of Extraction (%) for groundwater
               across different states and districts in India. The data indicates
               the percentage of groundwater extracted compared to the total
               extractable groundwater resources.
             </p>
-            <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-3">
-              <div className="rounded-md bg-emerald-900/20 border border-emerald-500/20 p-2 text-center">
-                <p className="text-xs text-emerald-400">Safe (&lt; 70%)</p>
-                <p className="text-lg font-semibold text-emerald-300">
+            <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="rounded-xl bg-emerald-900/30 backdrop-blur-sm border border-emerald-500/30 p-4 text-center hover:bg-emerald-900/40 hover:border-emerald-400/40 transition-all duration-300 shadow-lg hover:shadow-emerald-500/20">
+                <p className="text-xs text-emerald-400 font-medium">Safe (&lt; 70%)</p>
+                <p className="text-xl font-bold text-emerald-300 mt-2">
                   {
                     mergedDataset.filter(
                       (row) => parseFloat(row["Stage of Extraction Total"]) < 70
@@ -565,9 +568,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-md bg-amber-900/20 border border-amber-500/20 p-2 text-center">
-                <p className="text-xs text-amber-400">Semi-Critical (70-90%)</p>
-                <p className="text-lg font-semibold text-amber-300">
+              <div className="rounded-xl bg-amber-900/30 backdrop-blur-sm border border-amber-500/30 p-4 text-center hover:bg-amber-900/40 hover:border-amber-400/40 transition-all duration-300 shadow-lg hover:shadow-amber-500/20">
+                <p className="text-xs text-amber-400 font-medium">Semi-Critical (70-90%)</p>
+                <p className="text-xl font-bold text-amber-300 mt-2">
                   {
                     mergedDataset.filter((row) => {
                       const val = parseFloat(row["Stage of Extraction Total"]);
@@ -576,9 +579,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-md bg-orange-900/20 border border-orange-500/20 p-2 text-center">
-                <p className="text-xs text-orange-400">Critical (90-100%)</p>
-                <p className="text-lg font-semibold text-orange-300">
+              <div className="rounded-xl bg-orange-900/30 backdrop-blur-sm border border-orange-500/30 p-4 text-center hover:bg-orange-900/40 hover:border-orange-400/40 transition-all duration-300 shadow-lg hover:shadow-orange-500/20">
+                <p className="text-xs text-orange-400 font-medium">Critical (90-100%)</p>
+                <p className="text-xl font-bold text-orange-300 mt-2">
                   {
                     mergedDataset.filter((row) => {
                       const val = parseFloat(row["Stage of Extraction Total"]);
@@ -587,9 +590,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-md bg-red-900/20 border border-red-500/20 p-2 text-center">
-                <p className="text-xs text-red-400">Over-Exploited (≥ 100%)</p>
-                <p className="text-lg font-semibold text-red-300">
+              <div className="rounded-xl bg-red-900/30 backdrop-blur-sm border border-red-500/30 p-4 text-center hover:bg-red-900/40 hover:border-red-400/40 transition-all duration-300 shadow-lg hover:shadow-red-500/20">
+                <p className="text-xs text-red-400 font-medium">Over-Exploited (≥ 100%)</p>
+                <p className="text-xl font-bold text-red-300 mt-2">
                   {
                     mergedDataset.filter(
                       (row) =>
@@ -600,9 +603,9 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
-          <div className="overflow-y-auto rounded-lg border border-white/10 max-h-[60vh]">
+          <div className="overflow-y-auto rounded-xl border border-cyan-500/20 bg-slate-900/20 backdrop-blur-sm max-h-[60vh] shadow-lg glass-scrollbar">
             <table className="min-w-full text-sm">
-              <thead className="bg-white/5 text-slate-300 sticky top-0">
+              <thead className="bg-slate-800/40 backdrop-blur-sm text-slate-200 sticky top-0 border-b border-cyan-500/20">
                 <tr>
                   <th className="px-3 py-2 text-left">S.No</th>
                   <th className="px-3 py-2 text-left">State</th>
@@ -623,17 +626,17 @@ export default function DashboardPage() {
                   const extractionPct = parseFloat(
                     row["Stage of Extraction Total"]
                   );
-                  let rowClass = "odd:bg-white/5";
+                  let rowClass = "odd:bg-slate-800/20 hover:bg-slate-700/30 transition-colors duration-200";
                   let statusClass = "text-slate-300";
 
                   if (extractionPct >= 100) {
-                    rowClass += " bg-red-900/10";
+                    rowClass += " bg-red-900/20 hover:bg-red-800/30";
                     statusClass = "text-red-400 font-medium";
                   } else if (extractionPct >= 90) {
-                    rowClass += " bg-orange-900/10";
+                    rowClass += " bg-orange-900/20 hover:bg-orange-800/30";
                     statusClass = "text-orange-400 font-medium";
                   } else if (extractionPct >= 70) {
-                    rowClass += " bg-amber-900/10";
+                    rowClass += " bg-amber-900/20 hover:bg-amber-800/30";
                     statusClass = "text-amber-400 font-medium";
                   } else {
                     statusClass = "text-emerald-400";
@@ -673,42 +676,44 @@ export default function DashboardPage() {
               </tbody>
             </table>
           </div>
-          <div>
-            <p className="text-sm font-semibold text-slate-200 mb-2">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10">
+            <p className="text-sm font-bold text-slate-100 mb-4">
               Classification Categories
             </p>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-slate-300">
-              <li className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded bg-emerald-500"></span>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-200">
+              <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                <span className="w-4 h-4 rounded-full bg-emerald-500 shadow-lg shadow-emerald-500/30"></span>
                 <span>
-                  <strong>Safe:</strong> &lt; 70% extraction
+                  <strong className="text-emerald-400">Safe:</strong> &lt; 70% extraction
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded bg-amber-500"></span>
+              <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                <span className="w-4 h-4 rounded-full bg-amber-500 shadow-lg shadow-amber-500/30"></span>
                 <span>
-                  <strong>Semi-Critical:</strong> 70-90% extraction
+                  <strong className="text-amber-400">Semi-Critical:</strong> 70-90% extraction
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded bg-orange-500"></span>
+              <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                <span className="w-4 h-4 rounded-full bg-orange-500 shadow-lg shadow-orange-500/30"></span>
                 <span>
-                  <strong>Critical:</strong> 90-100% extraction
+                  <strong className="text-orange-400">Critical:</strong> 90-100% extraction
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded bg-red-500"></span>
+              <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-700/30 transition-colors duration-200">
+                <span className="w-4 h-4 rounded-full bg-red-500 shadow-lg shadow-red-500/30"></span>
                 <span>
-                  <strong>Over-Exploited:</strong> ≥ 100% extraction
+                  <strong className="text-red-400">Over-Exploited:</strong> ≥ 100% extraction
                 </span>
               </li>
             </ul>
-            <p className="text-xs text-slate-400 mt-3">
-              <strong>Note:</strong> Stage of Extraction indicates the
-              percentage of groundwater extracted compared to total extractable
-              resources. Values over 100% indicate over-exploitation of
-              groundwater resources.
-            </p>
+            <div className="mt-4 p-3 bg-slate-700/30 rounded-lg border border-cyan-500/10">
+              <p className="text-xs text-slate-300 leading-relaxed">
+                <strong className="text-cyan-400">Note:</strong> Stage of Extraction indicates the
+                percentage of groundwater extracted compared to total extractable
+                resources. Values over 100% indicate over-exploitation of
+                groundwater resources.
+              </p>
+            </div>
           </div>
         </div>
       </Modal>
@@ -722,16 +727,16 @@ export default function DashboardPage() {
           title={`${k.title} Details`}
         >
           <div className="grid gap-6">
-            <div>
-              <p className="text-sm text-slate-300">{k.description}</p>
+            <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10">
+              <p className="text-sm text-slate-200 leading-relaxed">{k.description}</p>
             </div>
-            <div className="overflow-y-auto rounded-lg border border-white/10 max-h-[70vh]">
+            <div className="overflow-y-auto rounded-xl border border-cyan-500/20 bg-slate-900/20 backdrop-blur-sm max-h-[70vh] shadow-lg glass-scrollbar">
               <table className="min-w-full text-sm">
-                <thead className="bg-white/5 text-slate-300">
+                <thead className="bg-slate-800/40 backdrop-blur-sm text-slate-200 sticky top-0 border-b border-cyan-500/20">
                   <tr>
                     {dataById[k.key] && dataById[k.key].length > 0
                       ? Object.keys(dataById[k.key][0]).map((col) => (
-                          <th key={col} className="px-3 py-2 text-left">
+                          <th key={col} className="px-3 py-2 text-left font-medium">
                             {col}
                           </th>
                         ))
@@ -740,9 +745,9 @@ export default function DashboardPage() {
                 </thead>
                 <tbody>
                   {(dataById[k.key] || []).map((row, idx) => (
-                    <tr key={idx} className="odd:bg-white/5">
+                    <tr key={idx} className="odd:bg-slate-800/20 hover:bg-slate-700/30 transition-colors duration-200">
                       {Object.keys(row).map((col) => (
-                        <td key={col} className="px-3 py-2 whitespace-nowrap">
+                        <td key={col} className="px-3 py-2 whitespace-nowrap text-slate-300">
                           {String(row[col])}
                         </td>
                       ))}
@@ -751,11 +756,11 @@ export default function DashboardPage() {
                 </tbody>
               </table>
             </div>
-            <div>
-              <p className="text-sm font-semibold text-slate-200 mb-2">
+            <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/10">
+              <p className="text-sm font-bold text-slate-100 mb-3">
                 Formula
               </p>
-              <p className="text-sm text-slate-300">{k.formula}</p>
+              <p className="text-sm text-slate-200 font-mono bg-slate-700/40 p-3 rounded-lg border border-cyan-500/20">{k.formula}</p>
             </div>
           </div>
         </Modal>

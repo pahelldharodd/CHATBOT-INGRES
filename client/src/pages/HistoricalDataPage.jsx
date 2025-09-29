@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useI18n } from "../i18n/I18nContext";
 const API_BASE = "http://localhost:7861";
 
 export default function HistoricalDataPage() {
+  const { t } = useI18n();
   const [question, setQuestion] = useState("");
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -75,10 +77,10 @@ export default function HistoricalDataPage() {
         <div className="mx-auto max-w-4xl px-4">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-slate-100 mb-2 text-glow">
-              Historical Data Assistant
+              {t.historical.title}
             </h1>
             <p className="text-slate-300">
-              Ask questions about historical groundwater documents and get AI-powered insights
+              {t.historical.subtitle}
             </p>
           </div>
         </div>
@@ -99,7 +101,7 @@ export default function HistoricalDataPage() {
                   </div>
                   <h3 className="text-lg font-medium text-slate-200 mb-2">Ready to help!</h3>
                   <p className="text-sm text-slate-400 max-w-md">
-                    Ask me anything about historical groundwater data, assessments, or documents. 
+                    {t.historical.greeting} 
                     I'll search through the knowledge base to provide accurate answers.
                   </p>
                 </div>
@@ -207,15 +209,10 @@ export default function HistoricalDataPage() {
           {history.length === 0 && !loading && (
             <div className="border-t border-slate-600/30 p-6 bg-slate-800/20">
               <div className="mb-3">
-                <h4 className="text-sm font-medium text-slate-200 mb-3">💡 Try asking:</h4>
+                <h4 className="text-sm font-medium text-slate-200 mb-3">{t.historical.tryAsking}</h4>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {[
-                  "What are the key findings in the historical assessments?",
-                  "How has groundwater extraction changed over time?",
-                  "What methods were used in past assessments?",
-                  "What are the main challenges mentioned in the documents?"
-                ].map((suggestion, idx) => (
+                {t.historical.quickQuestions.map((suggestion, idx) => (
                   <button
                     key={idx}
                     onClick={() => setQuestion(suggestion)}

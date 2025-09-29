@@ -6,7 +6,7 @@ export default function Tutorial() {
   // Interactive tutorial steps with visual guides
   const tutorialSteps = [
     {
-      title: "Welcome to INGRES Dashboard",
+      title: "Welcome to JalSaathi Dashboard",
       description: "This comprehensive tutorial will guide you through the features of our groundwater monitoring system. The interface is designed to provide clear access to critical groundwater data and analysis tools.",
       visual: "▣",
       action: "Click 'Next' to begin the tutorial",
@@ -63,7 +63,7 @@ export default function Tutorial() {
     },
     {
       title: "System Ready for Operation",
-      description: "You have completed the system overview tutorial. The INGRES platform is now ready for your groundwater monitoring and analysis requirements. All system functions are accessible through the main navigation.",
+      description: "You have completed the system overview tutorial. The JalSaathi platform is now ready for your groundwater monitoring and analysis requirements. All system functions are accessible through the main navigation.",
       visual: "▤",
       action: "Begin using the system for data analysis",
       highlight: "complete"

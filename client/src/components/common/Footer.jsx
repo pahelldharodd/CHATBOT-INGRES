@@ -3,33 +3,56 @@ import { useI18n } from '../../i18n/I18nContext'
 export default function Footer() {
 	const { t } = useI18n()
 	return (
-		<footer className="relative mt-16">
+		<footer className="relative mt-0 w-full">
+			{/* Gradient separator for visual continuity */}
+			<div className="h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+			
 			{/* Glass morphism background with gradient border */}
 			<div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-teal-500/10 to-blue-500/10 backdrop-blur-xl border-t border-white/20"></div>
 			
-			<div className="relative mx-auto max-w-7xl px-6 py-12">
+			<div className="relative mx-auto max-w-7xl px-6 py-16">
 				{/* Main Footer Content */}
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 					{/* Brand Section */}
 					<div className="col-span-1 md:col-span-2">
 						<div className="flex items-center gap-3 mb-4">
-							<div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center font-bold text-white">
-								IG
+							<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center font-bold text-white text-lg">
+								JS
 							</div>
 							<div>
 								<h3 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
-									IN-GRES
+									JalSaathi
 								</h3>
 								<p className="text-xs text-slate-400">Groundwater Resource Management</p>
 							</div>
 						</div>
-						<p className="text-slate-300 text-sm leading-relaxed max-w-md">
+						<p className="text-slate-300 text-sm leading-relaxed max-w-md mb-6">
 							Advanced groundwater monitoring and analysis system providing real-time insights, 
 							predictions, and comprehensive data management for sustainable water resource planning.
 						</p>
 						
+						{/* Key Features */}
+						<div className="grid grid-cols-2 gap-3 mb-6 max-w-md">
+							<div className="flex items-center gap-2 text-xs text-slate-400">
+								<div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+								Real-time Monitoring
+							</div>
+							<div className="flex items-center gap-2 text-xs text-slate-400">
+								<div className="w-1.5 h-1.5 rounded-full bg-teal-400"></div>
+								ML Predictions
+							</div>
+							<div className="flex items-center gap-2 text-xs text-slate-400">
+								<div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+								Historical Analysis
+							</div>
+							<div className="flex items-center gap-2 text-xs text-slate-400">
+								<div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>
+								Data Visualization
+							</div>
+						</div>
+						
 						{/* Social/Contact Icons */}
-						<div className="flex gap-3 mt-6">
+						<div className="flex gap-3">
 							<div className="w-9 h-9 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all cursor-pointer group">
 								<svg className="w-4 h-4 text-slate-400 group-hover:text-cyan-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
 									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -87,21 +110,53 @@ export default function Footer() {
 					</div>
 				</div>
 
+				{/* Technology Stack */}
+				<div className="mb-8">
+					<div className="text-center">
+						<h4 className="text-white font-semibold mb-4 text-sm">Powered By</h4>
+						<div className="flex flex-wrap justify-center gap-6 text-xs text-slate-400">
+							<div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+								<div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+								React & AI
+							</div>
+							<div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+								<div className="w-2 h-2 rounded-full bg-teal-400"></div>
+								Machine Learning
+							</div>
+							<div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+								<div className="w-2 h-2 rounded-full bg-blue-400"></div>
+								FastAPI
+							</div>
+							<div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+								<div className="w-2 h-2 rounded-full bg-emerald-400"></div>
+								ChromaDB
+							</div>
+						</div>
+					</div>
+				</div>
+
 				{/* Bottom Bar */}
 				<div className="pt-8 border-t border-white/10">
-					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
-						<div className="flex items-center gap-4 text-xs text-slate-400">
-							<span>© {new Date().getFullYear()} IN-GRES System</span>
-							<span className="hidden md:inline">•</span>
+					<div className="flex flex-col md:flex-row items-center justify-between gap-6">
+						<div className="flex flex-col md:flex-row items-center gap-4 text-xs text-slate-400">
+							<span className="hidden md:inline text-slate-600">•</span>
 							<span className="hidden md:inline">Government of India Initiative</span>
-							<span className="hidden md:inline">•</span>
+							<span className="hidden md:inline text-slate-600">•</span>
 							<span className="hidden md:inline">Version 2.1.0</span>
+							<span className="hidden md:inline text-slate-600">•</span>
+							<span className="hidden md:inline">© 2025 Push Pull Git. All rights reserved</span>
 						</div>
 						
-						{/* Status Indicator */}
-						<div className="flex items-center gap-2 text-xs">
-							<div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-							<span className="text-slate-400">System Operational</span>
+						{/* Status & Performance Indicators */}
+						<div className="flex items-center gap-6">
+							<div className="flex items-center gap-2 text-xs">
+								<div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+								<span className="text-slate-400">System Operational</span>
+							</div>
+							<div className="flex items-center gap-2 text-xs text-slate-400">
+								<div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+								<span>99.9% Uptime</span>
+							</div>
 						</div>
 					</div>
 				</div>

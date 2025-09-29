@@ -20,7 +20,7 @@ export default function Header() {
             <img
               src="/logo1.png"
               alt={t.brand}
-              className="relative h-10 w-10 drop-shadow-lg transition-transform group-hover:scale-110 duration-300"
+              className="relative h-12 w-12 md:h-14 md:w-14 drop-shadow-lg transition-transform group-hover:scale-110 duration-300"
             />
           </div>
           <span className="font-bold text-lg bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">

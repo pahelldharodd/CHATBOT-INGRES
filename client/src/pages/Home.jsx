@@ -15,13 +15,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative mx-auto max-w-6xl px-4 py-8">
         <div className="text-center">
-          {/* Animated logo with glow effect - smaller size */}
-          <div className="relative mb-6">
+          {/* Animated logo with glow effect - larger size for better visibility */}
+          <div className="relative"> 
             <div className="absolute inset-0 blur-xl bg-cyan-500/30 rounded-full animate-pulse"></div>
             <img
               src="/logo1.png"
               alt={t.brand}
-              className="relative h-20 w-20 mx-auto animate-float"
+              className="relative h-28 w-28 md:h-46 md:w-46 mx-auto animate-float"
             />
           </div>
 
@@ -32,8 +32,7 @@ export default function Home() {
 
           {/* Animated description with typewriter effect */}
           <p className="text-lg text-cyan-100/80 mb-6 max-w-2xl mx-auto animate-fade-in">
-            Experience groundwater intelligence through our dual AI chatbot
-            system
+            {t.home.heroDesc}
           </p>
 
           {/* Dual Chatbot Showcase - Main Feature */}
@@ -41,106 +40,107 @@ export default function Home() {
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500 via-blue-500 to-teal-500 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
             <div className="relative bg-slate-900/70 backdrop-blur-xl p-6 rounded-3xl border border-cyan-500/30">
               <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent text-center">
-                Choose Your AI Assistant
+                {t.home.chatbotTitle}
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 {/* Database Query Bot */}
-                <div className="group relative bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 p-2.5 mr-4 shadow-lg">
-                        <svg
-                          className="w-full h-full text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 7v10c0 2.21 1.79 4 4 4h8c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4H8c-2.21 0-4 1.79-4 4z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4"
-                          />
-                        </svg>
+                <a href="/chat" className="block">
+                  <div className="group relative bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 p-2.5 mr-4 shadow-lg">
+                          <svg
+                            className="w-full h-full text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M4 7v10c0 2.21 1.79 4 4 4h8c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4H8c-2.21 0-4 1.79-4 4z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M9 12l2 2 4-4"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-cyan-300">
+                          {t.home.databaseTitle}
+                        </h3>
                       </div>
-                      <h3 className="text-xl font-bold text-cyan-300">
-                        Database Query Assistant
-                      </h3>
-                    </div>
-                    <p className="text-slate-300/90 mb-6 leading-relaxed">
-                      Query the INGRES database with natural language. Get
-                      instant insights from structured groundwater data across
-                      India.
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center text-sm text-cyan-300">
-                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
-                        Real-time data queries
-                      </div>
-                      <div className="flex items-center text-sm text-cyan-300">
-                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
-                        Multi-year comparisons
-                      </div>
-                      <div className="flex items-center text-sm text-cyan-300">
-                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
-                        Statistical analysis
+                      <p className="text-slate-300/90 mb-6 leading-relaxed">
+                        {t.home.databaseDesc}
+                      </p>
+                      <div className="space-y-2">
+                        <div className="flex items-center text-sm text-cyan-300">
+                          <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
+                          Real-time data queries
+                        </div>
+                        <div className="flex items-center text-sm text-cyan-300">
+                          <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
+                          Multi-year comparisons
+                        </div>
+                        <div className="flex items-center text-sm text-cyan-300">
+                          <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
+                          Statistical analysis
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 {/* RAG Assessment Bot */}
-                <div className="group relative bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl border border-teal-500/20 hover:border-teal-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/25">
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-emerald-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-500 p-2.5 mr-4 shadow-lg">
-                        <svg
-                          className="w-full h-full text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                          />
-                        </svg>
+                <a href="/historical" className="block">
+                  <div className="group relative bg-slate-800/60 backdrop-blur-sm p-6 rounded-2xl border border-teal-500/20 hover:border-teal-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/25 cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-emerald-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-500 p-2.5 mr-4 shadow-lg">
+                          <svg
+                            className="w-full h-full text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-teal-300">
+                          {t.home.documentTitle}
+                        </h3>
                       </div>
-                      <h3 className="text-xl font-bold text-teal-300">
-                        CGWB Knowledge Assistant
-                      </h3>
-                    </div>
-                    <p className="text-slate-300/90 mb-6 leading-relaxed">
-                      Explore CGWB assessments using RAG technology. Understand
-                      technical terms and get insights from research reports.
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center text-sm text-teal-300">
-                        <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
-                        CGWB report analysis
-                      </div>
-                      <div className="flex items-center text-sm text-teal-300">
-                        <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
-                        Technical term explanations
-                      </div>
-                      <div className="flex items-center text-sm text-teal-300">
-                        <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
-                        Research insights
+                      <p className="text-slate-300/90 mb-6 leading-relaxed">
+                        {t.home.documentDesc}
+                      </p>
+                      <div className="space-y-2">
+                        <div className="flex items-center text-sm text-teal-300">
+                          <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
+                          CGWB report analysis
+                        </div>
+                        <div className="flex items-center text-sm text-teal-300">
+                          <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
+                          Technical term explanations
+                        </div>
+                        <div className="flex items-center text-sm text-teal-300">
+                          <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 animate-pulse"></div>
+                          Research insights
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               {/* Enhanced Primary CTA */}
@@ -153,7 +153,7 @@ export default function Home() {
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity bg-[radial-gradient(circle_at_50%_50%,_white_0%,_transparent_100%)]"></div>
                   <div className="absolute -inset-2 opacity-0 group-hover:opacity-100 transition-opacity blur-2xl bg-gradient-to-r from-cyan-400 via-blue-400 to-teal-400"></div>
                   <span className="relative mr-3">
-                    Start AI Chat Experience
+                    {t.home.startChat}
                   </span>
                   <svg
                     className="w-6 h-6 relative transition-transform group-hover:translate-x-2"
@@ -218,11 +218,10 @@ export default function Home() {
                   1
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-cyan-300">
-                  Choose Your Mode
+                  {t.home.chooseMode}
                 </h3>
                 <p className="text-slate-300/90 text-sm">
-                  Select between Database Queries for data analysis or Knowledge
-                  Assistant for CGWB reports and technical explanations.
+                  {t.home.chooseModeDesc}
                 </p>
               </div>
             </div>
@@ -236,7 +235,7 @@ export default function Home() {
                   2
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-300">
-                  Ask Naturally
+                  {t.home.askNaturally}
                 </h3>
                 <p className="text-slate-300/90 text-sm">
                   Type your questions in plain English. Our AI understands

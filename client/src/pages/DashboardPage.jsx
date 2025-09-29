@@ -49,7 +49,7 @@ function Modal({ open, onClose, title, children }) {
 }
 
 export default function DashboardPage() {
-  useI18n();
+  const { t } = useI18n();
   const [mergedOpen, setMergedOpen] = useState(false);
   const [kpiOpen, setKpiOpen] = useState(null);
   const [dataById, setDataById] = useState({});
@@ -247,7 +247,7 @@ export default function DashboardPage() {
   const pieChartData = useMemo(
     () => [
       {
-        name: "Safe",
+        name: t.status.safe,
         value: mergedKpis.safe,
         color: "#10b981",
         percentage:
@@ -256,7 +256,7 @@ export default function DashboardPage() {
             : 0,
       },
       {
-        name: "Semi-Critical",
+        name: t.status.semiCritical,
         value: mergedKpis.semiCritical,
         color: "#f59e0b",
         percentage:
@@ -265,7 +265,7 @@ export default function DashboardPage() {
             : 0,
       },
       {
-        name: "Critical",
+        name: t.status.critical,
         value: mergedKpis.critical,
         color: "#f97316",
         percentage:
@@ -274,7 +274,7 @@ export default function DashboardPage() {
             : 0,
       },
       {
-        name: "Over-Exploited",
+        name: t.status.overExploited,
         value: mergedKpis.overExploited,
         color: "#ef4444",
         percentage:
@@ -283,7 +283,7 @@ export default function DashboardPage() {
             : 0,
       },
       {
-        name: "Saline",
+        name: t.status.saline,
         value: mergedKpis.saline,
         color: "#8b5cf6",
         percentage:
@@ -292,7 +292,7 @@ export default function DashboardPage() {
             : 0,
       },
     ],
-    [mergedKpis]
+    [mergedKpis, t.status]
   );
 
   return (
@@ -313,10 +313,10 @@ export default function DashboardPage() {
           >
             <div className="flex flex-col gap-1 mb-5">
               <h2 className="text-lg font-semibold text-slate-200">
-                Groundwater Extraction Categories
+                {t.dashboard.extractionCategories}
               </h2>
               <p className="text-sm text-slate-400">
-                Total: {formatCompact(mergedKpis.total)} areas
+                {t.dashboard.total}: {formatCompact(mergedKpis.total)} {t.dashboard.areas}
               </p>
             </div>
 

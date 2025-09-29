@@ -6,6 +6,15 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
+def process_audio_input(audio):
+    """Process audio input and return transcribed text"""
+    if audio is None:
+        return ""
+    
+    # For now, return a placeholder message
+    # In a real implementation, you would use speech-to-text service
+    return "Voice input received - Speech-to-text functionality to be implemented"
+
 # Custom CSS for futuristic glassmorphism theme
 custom_css = """
 /* Futuristic Glassmorphism Theme */
@@ -256,6 +265,23 @@ body::before {
 .feedback-buttons:hover {
     filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4796%) hue-rotate(159deg) brightness(106%) contrast(89%);
 }
+
+/* Voice button styling */
+.voice-btn {
+    background: linear-gradient(135deg, var(--cyan-primary), var(--teal-primary)) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.5rem !important;
+    transition: all 0.3s ease !important;
+    margin-left: 0.5rem !important;
+}
+
+.voice-btn:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.6) !important;
+}
 """
 
 with gr.Blocks(
@@ -280,26 +306,26 @@ with gr.Blocks(
         block_border_color="rgba(6, 182, 212, 0.2)"
     ),
     css=custom_css,
-    title="🌊 INGRES AI Assistant",
+    title="INGRES AI Assistant",
     head="""
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     """
 ) as demo:
     # Header section with branding
-    with gr.Row():
-        gr.HTML("""
-        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(20, 184, 166, 0.1)); border-radius: 1.5rem; margin-bottom: 2rem; border: 1px solid rgba(6, 182, 212, 0.2);">
-            <h1 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #06b6d4, #14b8a6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin: 0;">
-                🌊 INGRES AI Assistant
-            </h1>
-            <p style="font-size: 1.2rem; color: #94a3b8; margin: 0.5rem 0 0 0;">
-                Intelligent Groundwater Analysis with Dual AI Capabilities
-            </p>
-        </div>
-        """)
+    # with gr.Row():
+    #     gr.HTML("""
+    #     <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(20, 184, 166, 0.1)); border-radius: 1.5rem; margin-bottom: 2rem; border: 1px solid rgba(6, 182, 212, 0.2);">
+    #         <h1 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #06b6d4, #14b8a6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin: 0;">
+    #             INGRES AI Assistant
+    #         </h1>
+    #         <p style="font-size: 1.2rem; color: #94a3b8; margin: 0.5rem 0 0 0;">
+    #             Intelligent Groundwater Analysis with Dual AI Capabilities
+    #         </p>
+    #     </div>
+    #     """)
     
     with gr.Tabs():
-        with gr.TabItem("🤖 AI Chat Assistant"):
+        with gr.TabItem("AI Chat Assistant"):
             # Assistant type selector - COMMENTED OUT FOR COMPACT UI
             # with gr.Row():
             #     gr.HTML("""
@@ -307,11 +333,11 @@ with gr.Blocks(
             #         <h3 style="color: #67e8f9; margin: 0 0 1rem 0; font-size: 1.3rem;">Choose Your AI Assistant Mode:</h3>
             #         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
             #             <div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 0.75rem; padding: 1rem;">
-            #                 <div style="color: #06b6d4; font-weight: 600; margin-bottom: 0.5rem;">📊 Database Query Mode</div>
+            #                 <div style="color: #06b6d4; font-weight: 600; margin-bottom: 0.5rem;">Database Query Mode</div>
             #                 <div style="color: #cbd5e1; font-size: 0.9rem;">Query INGRES groundwater database with natural language</div>
             #             </div>
             #             <div style="background: rgba(20, 184, 166, 0.1); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 0.75rem; padding: 1rem;">
-            #                 <div style="color: #14b8a6; font-weight: 600; margin-bottom: 0.5rem;">📚 Knowledge Assistant Mode</div>
+            #                 <div style="color: #14b8a6; font-weight: 600; margin-bottom: 0.5rem;">Knowledge Assistant Mode</div>
             #                 <div style="color: #cbd5e1; font-size: 0.9rem;">Explore CGWB reports and understand technical terms</div>
             #             </div>
             #         </div>
@@ -345,11 +371,17 @@ with gr.Blocks(
                 input_txt = gr.Textbox(
                     lines=3,
                     scale=8,
-                    placeholder="💬 Ask about groundwater data, technical terms, or upload files for analysis...",
+                    placeholder="Ask about groundwater data, technical terms, or upload files for analysis...",
                     container=False,
                     elem_classes=["futuristic-input"],
                     label="",
                     show_label=False
+                )
+                voice_btn = gr.Button(
+                    "🎤",
+                    scale=1,
+                    elem_classes=["voice-btn"],
+                    variant="secondary"
                 )
             
             ##############
@@ -358,20 +390,20 @@ with gr.Blocks(
             with gr.Row() as control_panel:
                 with gr.Column(scale=2):
                     text_submit_btn = gr.Button(
-                        value="🚀 Send Message", 
+                        value="Send Message", 
                         elem_classes=["primary-btn"],
                         variant="primary"
                     )
-                with gr.Column(scale=2):
-                    upload_btn = gr.UploadButton(
-                        "📁 Upload Data Files", 
-                        file_types=['.csv', '.xlsx'], 
-                        file_count="multiple",
-                        elem_classes=["upload-btn"]
-                    )
-                with gr.Column(scale=2):
+                # with gr.Column(scale=2):
+                #     upload_btn = gr.UploadButton(
+                #         "Upload Data Files", 
+                #         file_types=['.csv', '.xlsx'], 
+                #         file_count="multiple",
+                #         elem_classes=["upload-btn"]
+                #     )
+                # with gr.Column(scale=2):
                     clear_button = gr.Button(
-                        "🗑️ Clear Chat",
+                        "Clear Chat",
                         elem_classes=["clear-btn"],
                         variant="secondary"
                     )
@@ -380,29 +412,37 @@ with gr.Blocks(
             # Settings Panel - HIDDEN FOR COMPACT UI
             ##############
             # with gr.Row():
-            #     with gr.Accordion("⚙️ Advanced Settings", open=False):
+            #     with gr.Accordion("Advanced Settings", open=False):
             #         with gr.Row():
             app_functionality = gr.Dropdown(
-                label="🔧 App Functionality", 
+                label="App Functionality", 
                 choices=["Chat", "Process files"], 
                 value="Chat",
                 visible=False
             )
             chat_type = gr.Dropdown(
-                label="🤖 Chat Assistant Type", 
+                label="Chat Assistant Type", 
                 choices=[
-                    "📊 Database Query Assistant - INGRES SQL Data",
-                    "📚 Knowledge Assistant - CGWB Reports & Terms",
-                    # "🔍 Hybrid Mode - SQL + RAG Combined"
+                    "Database Query Assistant - INGRES SQL Data",
+                    "Knowledge Assistant - CGWB Reports & Terms",
+                    # "Hybrid Mode - SQL + RAG Combined"
                 ], 
-                value="📊 Database Query Assistant - INGRES SQL Data",
+                value="Database Query Assistant - INGRES SQL Data",
                 visible=False
             )
             ##############
             # Process:
             ##############
-            file_msg = upload_btn.upload(fn=UploadFile.run_pipeline, inputs=[
-                upload_btn, chatbot, app_functionality], outputs=[input_txt, chatbot], queue=False)
+            # Upload functionality commented out for compact UI
+            # file_msg = upload_btn.upload(fn=UploadFile.run_pipeline, inputs=[
+            #     upload_btn, chatbot, app_functionality], outputs=[input_txt, chatbot], queue=False)
+
+            # Voice button click handler
+            voice_btn.click(
+                fn=lambda: "Voice input clicked - implement speech-to-text here",
+                outputs=[input_txt],
+                queue=False
+            )
 
             txt_msg = input_txt.submit(fn=ChatBot.respond,
                                        inputs=[chatbot, input_txt,

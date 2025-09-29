@@ -1,11 +1,293 @@
 @import "tailwindcss";
-
-@theme {
-	--font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body, #root {
 	height: 100%;
 }
 
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #475569;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #64748b;
+}
+
+/* Firefox scrollbar */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #475569 #1e293b;
+}
+
+/* Inter font utility class */
+.font-inter {
+	font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Hover trace effect for cards */
+.hover-trace {
+	position: relative;
+	border-radius: 1rem;
+}
+
+.hover-trace::before {
+	content: '';
+	position: absolute;
+	inset: -2px;
+	border-radius: inherit;
+	padding: 2px;
+	background: conic-gradient(from 0deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: xor;
+	-webkit-mask-composite: xor;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.hover-trace:hover::before {
+	opacity: 1;
+	animation: ultra-smooth-trace 2s linear infinite;
+}
+
+@keyframes ultra-smooth-trace {
+	0% { background: conic-gradient(from 0deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	1.67% { background: conic-gradient(from 6deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	3.33% { background: conic-gradient(from 12deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	5% { background: conic-gradient(from 18deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	6.67% { background: conic-gradient(from 24deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	8.33% { background: conic-gradient(from 30deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	10% { background: conic-gradient(from 36deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	11.67% { background: conic-gradient(from 42deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	13.33% { background: conic-gradient(from 48deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	15% { background: conic-gradient(from 54deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	16.67% { background: conic-gradient(from 60deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	18.33% { background: conic-gradient(from 66deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	20% { background: conic-gradient(from 72deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	21.67% { background: conic-gradient(from 78deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	23.33% { background: conic-gradient(from 84deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	25% { background: conic-gradient(from 90deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	26.67% { background: conic-gradient(from 96deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	28.33% { background: conic-gradient(from 102deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	30% { background: conic-gradient(from 108deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	31.67% { background: conic-gradient(from 114deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	33.33% { background: conic-gradient(from 120deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	35% { background: conic-gradient(from 126deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	36.67% { background: conic-gradient(from 132deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	38.33% { background: conic-gradient(from 138deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	40% { background: conic-gradient(from 144deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	41.67% { background: conic-gradient(from 150deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	43.33% { background: conic-gradient(from 156deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	45% { background: conic-gradient(from 162deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	46.67% { background: conic-gradient(from 168deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	48.33% { background: conic-gradient(from 174deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	50% { background: conic-gradient(from 180deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	51.67% { background: conic-gradient(from 186deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	53.33% { background: conic-gradient(from 192deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	55% { background: conic-gradient(from 198deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	56.67% { background: conic-gradient(from 204deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	58.33% { background: conic-gradient(from 210deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	60% { background: conic-gradient(from 216deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	61.67% { background: conic-gradient(from 222deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	63.33% { background: conic-gradient(from 228deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	65% { background: conic-gradient(from 234deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	66.67% { background: conic-gradient(from 240deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	68.33% { background: conic-gradient(from 246deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	70% { background: conic-gradient(from 252deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	71.67% { background: conic-gradient(from 258deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	73.33% { background: conic-gradient(from 264deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	75% { background: conic-gradient(from 270deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	76.67% { background: conic-gradient(from 276deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	78.33% { background: conic-gradient(from 282deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	80% { background: conic-gradient(from 288deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	81.67% { background: conic-gradient(from 294deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	83.33% { background: conic-gradient(from 300deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	85% { background: conic-gradient(from 306deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	86.67% { background: conic-gradient(from 312deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	88.33% { background: conic-gradient(from 318deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	90% { background: conic-gradient(from 324deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	91.67% { background: conic-gradient(from 330deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	93.33% { background: conic-gradient(from 336deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	95% { background: conic-gradient(from 342deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	96.67% { background: conic-gradient(from 348deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	98.33% { background: conic-gradient(from 354deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	100% { background: conic-gradient(from 360deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+}
+
 /* App base styles can go here if needed */
+
+/* AGGRESSIVE outline removal - completely eliminate all focus rings */
+*, *::before, *::after {
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+	-moz-outline: none !important;
+}
+
+*:focus, *:focus-visible, *:focus-within, *:active, *:hover {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: inherit !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+	-moz-outline: none !important;
+}
+
+/* Remove any default browser button/link styling */
+a, button, input, textarea, select {
+	outline: none !important;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+}
+
+/* NavLink specific - kill everything */
+nav a, [role="navigation"] a {
+	outline: none !important;
+	transition: all 0.15s ease !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+	border: none !important;
+}
+
+nav a:focus, nav a:focus-visible, nav a:active, nav a:hover,
+[role="navigation"] a:focus, [role="navigation"] a:focus-visible, 
+[role="navigation"] a:active, [role="navigation"] a:hover {
+	outline: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+}
+
+/* Faster hover effect transitions */
+div[class*="transition-opacity duration-300"] {
+	transition: opacity 0.15s ease !important;
+}
+
+/* Kill all default browser focus behavior */
+:focus {
+	outline: none !important;
+}
+
+::-moz-focus-inner {
+	border: 0 !important;
+	outline: none !important;
+}
+
+/* Additional aggressive outline removal for cards and interactive elements */
+.group:focus, .group:focus-visible, .group:active,
+div[class*="hover:"]:focus, div[class*="hover:"]:focus-visible, div[class*="hover:"]:active,
+a:focus, a:focus-visible, a:active,
+button:focus, button:focus-visible, button:active {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+}
+
+/* NUCLEAR OPTION - Remove ALL outlines from everything */
+* {
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+}
+
+*:focus, *:focus-visible, *:active {
+	outline: none !important;
+	box-shadow: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-focus-ring-color: transparent !important;
+}
+
+/* Ultra-smooth 45fps hover-trace animation - FIXED */
+.hover-trace {
+	position: relative;
+	overflow: visible;
+	outline: none !important;
+}
+
+.hover-trace::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: conic-gradient(from 0deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg);
+	border-radius: inherit;
+	opacity: 0;
+	pointer-events: none;
+	z-index: -1;
+	transition: opacity 0.3s ease;
+}
+
+.hover-trace:hover::before {
+	opacity: 1;
+	animation: ultra-smooth-trace 2s linear infinite;
+}
+
+.hover-trace > * {
+	position: relative;
+	z-index: 1;
+}
+
+@keyframes ultra-smooth-trace {
+	0% { background: conic-gradient(from 0deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	2.22% { background: conic-gradient(from 8deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	4.44% { background: conic-gradient(from 16deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	6.67% { background: conic-gradient(from 24deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	8.89% { background: conic-gradient(from 32deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	11.11% { background: conic-gradient(from 40deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	13.33% { background: conic-gradient(from 48deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	15.56% { background: conic-gradient(from 56deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	17.78% { background: conic-gradient(from 64deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	20% { background: conic-gradient(from 72deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	22.22% { background: conic-gradient(from 80deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	24.44% { background: conic-gradient(from 88deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	26.67% { background: conic-gradient(from 96deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	28.89% { background: conic-gradient(from 104deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	31.11% { background: conic-gradient(from 112deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	33.33% { background: conic-gradient(from 120deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	35.56% { background: conic-gradient(from 128deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	37.78% { background: conic-gradient(from 136deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	40% { background: conic-gradient(from 144deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	42.22% { background: conic-gradient(from 152deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	44.44% { background: conic-gradient(from 160deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	46.67% { background: conic-gradient(from 168deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	48.89% { background: conic-gradient(from 176deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	51.11% { background: conic-gradient(from 184deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	53.33% { background: conic-gradient(from 192deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	55.56% { background: conic-gradient(from 200deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	57.78% { background: conic-gradient(from 208deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	60% { background: conic-gradient(from 216deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	62.22% { background: conic-gradient(from 224deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	64.44% { background: conic-gradient(from 232deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	66.67% { background: conic-gradient(from 240deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	68.89% { background: conic-gradient(from 248deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	71.11% { background: conic-gradient(from 256deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	73.33% { background: conic-gradient(from 264deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	75.56% { background: conic-gradient(from 272deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	77.78% { background: conic-gradient(from 280deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	80% { background: conic-gradient(from 288deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	82.22% { background: conic-gradient(from 296deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	84.44% { background: conic-gradient(from 304deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	86.67% { background: conic-gradient(from 312deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	88.89% { background: conic-gradient(from 320deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	91.11% { background: conic-gradient(from 328deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	93.33% { background: conic-gradient(from 336deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	95.56% { background: conic-gradient(from 344deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	97.78% { background: conic-gradient(from 352deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+	100% { background: conic-gradient(from 360deg, transparent 0deg, transparent 315deg, #14b8a6 340deg, #06b6d4 360deg); }
+}

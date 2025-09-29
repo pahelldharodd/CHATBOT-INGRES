@@ -429,7 +429,7 @@ export default function DashboardPage() {
                   : "bg-slate-800/60 backdrop-blur-xl text-slate-200 border-slate-600/50 hover:border-cyan-500/30 hover:bg-slate-700/60"
               }`}
             >
-              Map 1
+              Stage of Extraction
             </button>
             <button
               onClick={() => setSelectedMap("map2")}
@@ -439,7 +439,7 @@ export default function DashboardPage() {
                   : "bg-slate-800/60 backdrop-blur-xl text-slate-200 border-slate-600/50 hover:border-cyan-500/30 hover:bg-slate-700/60"
               }`}
             >
-              Map 2
+              Annual Rainfall
             </button>
             <button
               onClick={() => setSelectedMap("map3")}
@@ -449,7 +449,7 @@ export default function DashboardPage() {
                   : "bg-slate-800/60 backdrop-blur-xl text-slate-200 border-slate-600/50 hover:border-cyan-500/30 hover:bg-slate-700/60"
               }`}
             >
-              Map 3
+              Annual Recharge
             </button>
             <button
               onClick={() => setSelectedMap("map4")}
@@ -459,7 +459,7 @@ export default function DashboardPage() {
                   : "bg-slate-800/60 backdrop-blur-xl text-slate-200 border-slate-600/50 hover:border-cyan-500/30 hover:bg-slate-700/60"
               }`}
             >
-              Map 4
+              Annual Extractable
             </button>
           </div>
           {/* Combine any successful INGRES loads (we try multiple locations during boot) */}
@@ -558,9 +558,9 @@ export default function DashboardPage() {
               extractable groundwater resources.
             </p>
             <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="rounded-xl bg-emerald-900/30 backdrop-blur-sm border border-emerald-500/30 p-4 text-center hover:bg-emerald-900/40 hover:border-emerald-400/40 transition-all duration-300 shadow-lg hover:shadow-emerald-500/20">
-                <p className="text-xs text-emerald-400 font-medium">Safe (&lt; 70%)</p>
-                <p className="text-xl font-bold text-emerald-300 mt-2">
+              <div className="rounded-xl bg-emerald-800 backdrop-blur-sm border border-emerald-500 p-4 text-center hover:bg-emerald-700 hover:border-emerald-400 transition-all duration-300 shadow-lg hover:shadow-emerald-500/20">
+                <p className="text-xs text-emerald-300 font-medium">Safe (&lt; 70%)</p>
+                <p className="text-xl font-bold text-emerald-100 mt-2">
                   {
                     mergedDataset.filter(
                       (row) => parseFloat(row["Stage of Extraction Total"]) < 70
@@ -568,9 +568,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-xl bg-amber-900/30 backdrop-blur-sm border border-amber-500/30 p-4 text-center hover:bg-amber-900/40 hover:border-amber-400/40 transition-all duration-300 shadow-lg hover:shadow-amber-500/20">
-                <p className="text-xs text-amber-400 font-medium">Semi-Critical (70-90%)</p>
-                <p className="text-xl font-bold text-amber-300 mt-2">
+              <div className="rounded-xl bg-yellow-700 backdrop-blur-sm border border-yellow-500 p-4 text-center hover:bg-yellow-600 hover:border-yellow-400 transition-all duration-300 shadow-lg hover:shadow-yellow-500/20">
+                <p className="text-xs text-yellow-200 font-medium">Semi-Critical (70-90%)</p>
+                <p className="text-xl font-bold text-yellow-50 mt-2">
                   {
                     mergedDataset.filter((row) => {
                       const val = parseFloat(row["Stage of Extraction Total"]);
@@ -579,9 +579,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-xl bg-orange-900/30 backdrop-blur-sm border border-orange-500/30 p-4 text-center hover:bg-orange-900/40 hover:border-orange-400/40 transition-all duration-300 shadow-lg hover:shadow-orange-500/20">
-                <p className="text-xs text-orange-400 font-medium">Critical (90-100%)</p>
-                <p className="text-xl font-bold text-orange-300 mt-2">
+              <div className="rounded-xl bg-orange-800 backdrop-blur-sm border border-orange-500 p-4 text-center hover:bg-orange-700 hover:border-orange-400 transition-all duration-300 shadow-lg hover:shadow-orange-500/20">
+                <p className="text-xs text-orange-300 font-medium">Critical (90-100%)</p>
+                <p className="text-xl font-bold text-orange-100 mt-2">
                   {
                     mergedDataset.filter((row) => {
                       const val = parseFloat(row["Stage of Extraction Total"]);
@@ -590,9 +590,9 @@ export default function DashboardPage() {
                   }
                 </p>
               </div>
-              <div className="rounded-xl bg-red-900/30 backdrop-blur-sm border border-red-500/30 p-4 text-center hover:bg-red-900/40 hover:border-red-400/40 transition-all duration-300 shadow-lg hover:shadow-red-500/20">
-                <p className="text-xs text-red-400 font-medium">Over-Exploited (≥ 100%)</p>
-                <p className="text-xl font-bold text-red-300 mt-2">
+              <div className="rounded-xl bg-red-900 backdrop-blur-sm border border-red-600 p-4 text-center hover:bg-red-800 hover:border-red-500 transition-all duration-300 shadow-lg hover:shadow-red-600/20">
+                <p className="text-xs text-red-300 font-medium">Over-Exploited (≥ 100%)</p>
+                <p className="text-xl font-bold text-red-100 mt-2">
                   {
                     mergedDataset.filter(
                       (row) =>

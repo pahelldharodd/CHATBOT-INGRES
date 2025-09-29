@@ -33,7 +33,7 @@ export default function Header() {
           <NavLink
             to="/"
             className={({ isActive }) => `
-							relative px-4 py-2 rounded-xl font-medium transition-all duration-300 group overflow-hidden
+							relative px-4 py-2 rounded-xl font-medium transition-all duration-150 group overflow-hidden focus:outline-none
 							${
                 isActive
                   ? "text-cyan-300 bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/30 shadow-lg shadow-cyan-500/25"
@@ -54,7 +54,7 @@ export default function Header() {
           <NavLink
             to="/chat"
             className={({ isActive }) => `
-							relative px-4 py-2 rounded-xl font-medium transition-all duration-300 group overflow-hidden
+							relative px-4 py-2 rounded-xl font-medium transition-all duration-150 group overflow-hidden focus:outline-none
 							${
                 isActive
                   ? "text-cyan-300 bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/30 shadow-lg shadow-cyan-500/25"

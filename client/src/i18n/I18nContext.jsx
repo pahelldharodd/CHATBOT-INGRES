@@ -114,7 +114,7 @@ const translations = {
 			tryAsking: '💡 Try asking:',
 			quickQuestions: [
 				'What are the key findings in the historical assessments?',
-				'How has groundwater quality changed over the years?',
+				'What is the Ground water resource scenario in Assam?',
 				'What are the major challenges identified in past reports?'
 			]
 		}

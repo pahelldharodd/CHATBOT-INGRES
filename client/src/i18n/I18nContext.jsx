@@ -17,6 +17,8 @@ const translations = {
 		},
 		home: {
 			welcome: 'Welcome to JalSaathi',
+			tagline: 'Where there is water, there is life',
+			taglineHindi: 'जल है तो जीवन है',
 			desc: 'Explore groundwater insights, chat with the assistant, and visualize data across regions.',
 			heroDesc: 'Experience groundwater intelligence through our dual AI chatbot system',
 			chatbotTitle: 'Choose Your AI Assistant',
@@ -133,6 +135,8 @@ const translations = {
 		},
 		home: {
 			welcome: 'JalSaathi में आपका स्वागत है',
+			tagline: 'जल है तो जीवन है',
+			taglineEnglish: 'Where there is water, there is life',
 			desc: 'भूजल जानकारियाँ देखें, सहायक से बात करें और क्षेत्रों में आँकड़ों का दृश्यांकन करें।',
 			heroDesc: 'हमारे द्विआधारी AI चैटबॉट सिस्टम के माध्यम से भूजल बुद्धिमत्ता का अनुभव करें',
 			chatbotTitle: 'अपना AI सहायक चुनें',

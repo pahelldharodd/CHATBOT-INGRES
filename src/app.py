@@ -5,6 +5,7 @@ from utils.ui_settings import UISettings
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import os
+import socket
 
 # Custom CSS for futuristic glassmorphism theme
 custom_css = """
@@ -445,4 +446,17 @@ gr.mount_gradio_app(app, demo, path="/gradio")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=7860)
+    def _pick_available_port(start_port: int, host: str = "0.0.0.0", attempts: int = 20) -> int:
+        for port in range(start_port, start_port + attempts):
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+                sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+                try:
+                    sock.bind((host, port))
+                except OSError:
+                    continue
+                return port
+        raise RuntimeError(f"No free port found starting from {start_port}")
+
+    port = _pick_available_port(int(os.getenv("PORT", "7860")))
+    print(f"[INGRES AI Assistant] Starting on port {port}")
+    uvicorn.run(app, host="0.0.0.0", port=port)

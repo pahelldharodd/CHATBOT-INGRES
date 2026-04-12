@@ -68,6 +68,26 @@ By combining **AI, data visualization, and multilingual support**, this project 
 
 ---
 
+## 🔐 Gemini API Key Fallback Setup
+
+Both chatbot backends now support automatic API-key fallback when a key hits quota or rate limits.
+
+- Main chatbot (SQL + knowledge assistant in `src/app.py` path):
+	- `GEMINI_API_KEYS=key_1,key_2`
+	- Or keep single key + fallback key:
+		- `GEMINI_API_KEY=key_1`
+		- `GEMINI_API_KEY_FALLBACK=key_2`
+
+- Historical chatbot (`src/historical_ai.py`):
+	- `HISTORICAL_API_KEYS=hist_key_1,hist_key_2`
+	- Or keep single key + fallback key:
+		- `HISTORICAL_API_KEY=hist_key_1`
+		- `HISTORICAL_API_KEY_FALLBACK=hist_key_2`
+
+If the first key returns 429/quota errors, the service automatically retries with the next configured key.
+
+---
+
 ## 🤝 Contributing
 Contributions are welcome!  
 - Fork this repo  

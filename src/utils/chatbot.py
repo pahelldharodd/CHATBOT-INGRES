@@ -2,6 +2,7 @@ import os
 import re
 from typing import List, Tuple
 from utils.load_config import LoadConfig
+from utils.prepare_sqlitedb_from_csv_xlsx import PrepareSQLFromTabularData
 from utils.canonical_schema import ensure_canonical_views, build_schema_context
 from langchain_community.utilities import SQLDatabase
 from sqlalchemy import create_engine
@@ -118,8 +119,12 @@ class ChatBot:
         Only output one of: greeting, goodbye, thanks, data_query.
         User message: {message}
         """
-        intent_response = APPCFG.gemini_llm.generate_content(greeting_check_prompt)
-        intent = intent_response.text.strip().lower()
+        try:
+            intent_response = APPCFG.generate_content_with_fallback(greeting_check_prompt)
+            intent = intent_response.text.strip().lower()
+        except Exception:
+            # If the LLM is unavailable, continue as a normal data query path.
+            intent = "data_query"
         
         if intent == "greeting":
             response = "Hello! How can I help you with groundwater data or queries today?"
@@ -189,11 +194,21 @@ class ChatBot:
                         return "", chatbot
 
                 elif chat_type in ["📊 Database Query Assistant - INGRES SQL Data", "Q&A with stored CSV/XLSX SQL-DB"]:
+                    if not os.path.exists(APPCFG.stored_csv_xlsx_sqldb_directory):
+                        try:
+                            prep_sql_instance = PrepareSQLFromTabularData(APPCFG.stored_csv_xlsx_directory)
+                            prep_sql_instance.run_pipeline()
+                        except Exception as e:
+                            error_msg = f"Stored SQL DB setup failed: {e}"
+                            chatbot.append({"role": "user", "content": message})
+                            chatbot.append({"role": "assistant", "content": error_msg})
+                            return "", chatbot
+
                     if os.path.exists(APPCFG.stored_csv_xlsx_sqldb_directory):
                         engine = create_engine(f"sqlite:///{APPCFG.stored_csv_xlsx_sqldb_directory}")
                         db = SQLDatabase(engine=engine)
                     else:
-                        error_msg = "Stored SQL DB not found. Please run `prepare_csv_xlsx_sqlitedb.py`."
+                        error_msg = "Stored SQL DB not found after auto-setup. Please check data/csv_xlsx input files."
                         chatbot.append({"role": "user", "content": message})
                         chatbot.append({"role": "assistant", "content": error_msg})
                         return "", chatbot
@@ -290,7 +305,13 @@ class ChatBot:
                                 Return ONLY a valid SQL query. No explanations, no Markdown.
                                 """
                 # Use robust fallback generation to avoid model version 404s
-                sql_response = APPCFG.generate_content_with_fallback(prompt)
+                try:
+                    sql_response = APPCFG.generate_content_with_fallback(prompt)
+                except Exception:
+                    error_msg = APPCFG.llm_unavailable_message()
+                    chatbot.append({"role": "user", "content": message})
+                    chatbot.append({"role": "assistant", "content": error_msg})
+                    return "", chatbot
                 sql_query = clean_sql_query(sql_response.text)
                 # Safety: rewrite any lingering base table references to v_* views
                 sql_query = rewrite_sql_to_use_views(sql_query, base_tables, canonical_views)
@@ -321,7 +342,13 @@ class ChatBot:
                 SQL Result: {result}
                 Answer the user question clearly.
                 """
-                answer_response = APPCFG.generate_content_with_fallback(answer_prompt)
+                try:
+                    answer_response = APPCFG.generate_content_with_fallback(answer_prompt)
+                except Exception:
+                    error_msg = APPCFG.llm_unavailable_message()
+                    chatbot.append({"role": "user", "content": message})
+                    chatbot.append({"role": "assistant", "content": error_msg})
+                    return "", chatbot
                 response = answer_response.text
 
             # # 3. RAG with stored ChromaDB
@@ -360,7 +387,13 @@ class ChatBot:
                 Please provide a comprehensive answer about groundwater terminology, CGWB assessment procedures, hydrogeological concepts, or related technical information.
                 Focus on being educational and informative while maintaining accuracy.
                 """
-                knowledge_response = APPCFG.generate_content_with_fallback(knowledge_prompt)
+                try:
+                    knowledge_response = APPCFG.generate_content_with_fallback(knowledge_prompt)
+                except Exception:
+                    error_msg = APPCFG.llm_unavailable_message()
+                    chatbot.append({"role": "user", "content": message})
+                    chatbot.append({"role": "assistant", "content": error_msg})
+                    return "", chatbot
                 response = knowledge_response.text
             
             else:

@@ -144,7 +144,7 @@ export default function Footer() {
 							<span className="hidden md:inline text-slate-600">•</span>
 							<span className="hidden md:inline">Version 2.1.0</span>
 							<span className="hidden md:inline text-slate-600">•</span>
-							<span className="hidden md:inline">© 2025 Push Pull Git. All rights reserved</span>
+							<span className="hidden md:inline">© 2026 Team JalSaathi All rights reserved</span>
 						</div>
 						
 						{/* Status & Performance Indicators */}
